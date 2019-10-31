@@ -4,15 +4,15 @@
 Để lập trình Java, cần làm đầy đủ các bước sau:
 
 1. Tìm một vấn đề có thể giải quyết bằng lập trình.
-2. Cảm thấy hứng thú, nếu không --> quay lại bước 1.
+2. Cảm thấy hứng thú, nếu không -> quay lại bước 1.
 3. Tìm hướng giải quyết, thiết kế chương trình.
-4. Cảm thấy khả thi, nếu không --> quay lại bước 3.
+4. Cảm thấy khả thi, nếu không -> quay lại bước 3.
 5. Cài đặt ý tưởng bằng Java và biên dịch.
-6. Bị lỗi biên dịch, cảm thấy khó chịu --> quay lại bước 5 **hoặc** chương trình chạy thành công, cảm thấy vui sướng.
+6. Bị lỗi biên dịch, cảm thấy khó chịu -> quay lại bước 5 **hoặc** chương trình chạy thành công, cảm thấy vui sướng.
 7. Kiểm thử chương trình.
-8. Thấy chương trình chạy không đúng, cảm thấy khó hiểu --> quay lại bước 3 **hoặc** chương trình chạy đúng, cảm thấy thoả mãn.
+8. Thấy chương trình chạy không đúng, cảm thấy khó hiểu -> quay lại bước 3 **hoặc** chương trình chạy đúng, cảm thấy thoả mãn.
 9. Viết tài liệu về chương trình và bảo trì.
-10. Cảm thấy chán --> quay lại bước 1.
+10. Cảm thấy chán -> quay lại bước 1.
 
 Hoặc bỏ qua vài bước cũng được.
 
@@ -30,11 +30,11 @@ Hướng dẫn máy tính chia trường hợp (nếu cái này thì làm cái n
 
 #### Ví dụ một vài cái xem nào.
 Ví dụ:
-- Ý nghĩa cuộc sống là gì? --> không biết mô tả thành các bước như nào --> không lập trình được.
-- Có những số nào nhỏ hơn 10 tạo thành 3 cạnh tam giác vuông? --> kiểm tra lần lượt tất cả các bộ ba số (1, 1, 1), (1, 1, 2), (1, 1, 3) ... (1, 1, 9), (1, 2, 1) ... (9, 9, 9) thấy bộ ba nào thoả mãn điều kiện tổng bình phương của 2 số đầu bằng bình phương của số thứ 3 thì tạo thành 3 cạnh tam giác được --> lập trình được.
-- Có 1 file lưu tên và email của 1000 người, giờ làm sao gửi email cho từng người nhưng dòng chữ "Kính gửi ..." có tên người đó? --> mở file, đọc lần lượt tên và email của từng người, thay dấu ... trong dòng chữ "Kính gửi ..." thành tên người đó rồi gửi mail --> lập trình được.
-- Bài hát vừa ra hay hay không để còn nghe? --> chưa mô tả được cụ thể thế nào là hay thì chưa lập trình được.
-- Vẽ cái ảnh này lên màn hình, nếu ấn lên thì ảnh dịch lên, nếu ấn xuống thì ảnh dịch xuống --> vừa tự mô tả các bước rồi đó --> lập trình được.
+- Ý nghĩa cuộc sống là gì? -> không biết mô tả thành các bước như nào -> không lập trình được.
+- Có những số nào nhỏ hơn 10 tạo thành 3 cạnh tam giác vuông? -> kiểm tra lần lượt tất cả các bộ ba số (1, 1, 1), (1, 1, 2), (1, 1, 3) ... (1, 1, 9), (1, 2, 1) ... (9, 9, 9) thấy bộ ba nào thoả mãn điều kiện tổng bình phương của 2 số đầu bằng bình phương của số thứ 3 thì tạo thành 3 cạnh tam giác được -> lập trình được.
+- Có 1 file lưu tên và email của 1000 người, giờ làm sao gửi email cho từng người nhưng dòng chữ "Kính gửi ..." có tên người đó? -> mở file, đọc lần lượt tên và email của từng người, thay dấu ... trong dòng chữ "Kính gửi ..." thành tên người đó rồi gửi mail -> lập trình được.
+- Bài hát vừa ra hay hay không để còn nghe? -> chưa mô tả được cụ thể thế nào là hay thì chưa lập trình được.
+- Vẽ cái ảnh này lên màn hình, nếu ấn lên thì ảnh dịch lên, nếu ấn xuống thì ảnh dịch xuống -> vừa tự mô tả các bước rồi đó -> lập trình được.
 
 #### Có vấn đề mà không hứng thú làm thì có làm không?
 Nếu không bị bắt làm thì tìm cái khác.
@@ -42,7 +42,7 @@ Nếu không bị bắt làm thì tìm cái khác.
 #### Lập trình mô tả được thành các bước mà, không lập trình cho máy tính tự lập trình được à?
 Các bước phải cụ thể hơn nữa. Chưa biết cách mô tả một bài toán để máy tính hiểu đúng ý mình thì chưa lập trình cho máy tính tự lập trình được.
 
-**Giờ người ta đang nghiên cứu cách máy tính tự lập trình rồi, lập trình viên sắp thất nghiệp rồi .-.**
+*Giờ người ta đang nghiên cứu cách máy tính tự lập trình rồi, lập trình viên sắp thất nghiệp rồi .-.*
 
 #### Thế nào gọi là tìm thấy hướng giải quyết?
 Các bước cụ thể giải quyết một vấn đề gọi là thuật toán ([algorithm](../terminology.md#algorithm)). Tìm ra thuật toán có vẻ khả thi (nghĩ máy tính làm theo được) là có thể bắt tay vào bước tiếp theo.
@@ -77,7 +77,7 @@ Sẽ thấy vui .-.
 Chương trình đã chạy được không có nghĩa là chạy đúng. Kiểm thử là kiểm tra chương trình với nhiều trường hợp khác nhau để đảm bảo không có trường hợp chương trình chạy sai.
 
 #### Sao phải viết tài liệu?
-Lâu không động vào mình sẽ không nhớ chương trình mình viết từ đời nào có tác dụng gì, hoặc không nhớ đoạn này trong chương trình đang làm gì, hoặc đưa người khác làm tiếp người ta không hiểu gì hết nên cần viết tài liệu. Tài liệu mô tả chương trình làm gì, các thành phần trong chương trình làm gì.
+Lâu không động vào mình sẽ không nhớ chương trình mình viết từ đời nào có tác dụng gì, hoặc không nhớ đoạn này trong chương trình đang làm gì, hoặc đưa người khác làm tiếp người ta không hiểu gì nên cần viết tài liệu. Tài liệu mô tả chương trình làm gì, các thành phần trong chương trình làm gì.
 
 #### Bảo trì là gì?
 Bảo trì là đảm bảo chương trình vẫn còn chạy đúng theo thời gian. Trong quá trình sử dụng chương trình có thể phát hiện thêm lỗi thì cần sửa hay một số thứ chương trình mình phụ thuộc vào mới chạy được vừa được nâng cấp thì chương trình mình cũng cần nâng cấp theo.

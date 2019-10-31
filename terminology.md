@@ -16,7 +16,7 @@ Nếu là động từ, code là việc gõ ra các dòng lệnh. Nếu là danh
 
 *Lần đầu đề cập: [Các bước lập trình](programming-process/README.md#cài-đặt-là-làm-gì)*
 
-### Compiler
+#### Compiler
 *Trình biên dịch*
 
 Là chương trình dùng để chuyển đổi từ file mã nguồn sang file mã máy.
@@ -27,5 +27,5 @@ Là chương trình dùng để chuyển đổi từ file mã nguồn sang file 
 
 Một file mã nguồn là file chứa các lệnh hướng dẫn máy tính làm theo. File mã nguồn Java phải lưu trên máy tính với đuôi là `.java`.
 
-*Lần đầu đề cập: [Các bước lập trình](programming-process/README.md#cài-đặt-là-làm-gì)
+*Lần đầu đề cập: [Các bước lập trình](programming-process/README.md#cài-đặt-là-làm-gì)*
 
