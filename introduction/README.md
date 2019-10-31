@@ -1,5 +1,4 @@
-
-## Giới thiệu
+# Giới thiệu
 
 #### Lập trình là gì vậy?
 Là sử dụng một ngôn ngữ lập trình để bảo máy tính làm việc giúp mình.
@@ -9,7 +8,8 @@ Chọn một hay nhiều lý do sau:
 - Thấy mọi người xung quanh đều biết, sợ nói chuyện mình không hiểu gì.
 - Có máy tính mà không biết làm gì khác ngoài vào mạng xem facebook với youtube.
 - Muốn xem mấy đứa IT học gì mấy năm trời mà ra trường vẫn không biết cài win.
-- Muốn viết game, viết app, viết web.
+- Thấy học lập trình dễ kiếm việc.
+- Muốn tự viết game, viết app, viết web.
 - Muốn tự động hoá một số việc mình phải làm đi làm lại.
 - Muốn làm hacker.
 - Bị bắt học.

@@ -1,7 +1,10 @@
-## Lập trình Java
+# Lập trình Java
 
+#### Trang gì đây?
 Trang này gồm lý thuyết và bài tập để biết lập trình bằng ngôn ngữ Java.  
-**Cách sử dụng:** Đọc từ đầu đến cuối.
+
+#### Dùng như nào?
+Đọc từ đầu đến cuối thôi.
 
 *Học xong vẫn không biết gì không chịu trách nhiệm.*
 
@@ -10,4 +13,4 @@ Trang này gồm lý thuyết và bài tập để biết lập trình bằng ng
 1. [Cài đặt môi trường lập trình Java](preparation)
 1. [Java căn bản](java-basic)
 1. [Lập trình hướng đối tượng với Java](java-oop)
-1. [Bảng thuật ngữ](terminology.md)
+1. [Các thuật ngữ](terminology.md)
