@@ -4,15 +4,15 @@
 Để lập trình Java, cần làm đầy đủ các bước sau:
 
 1. Tìm một vấn đề có thể giải quyết bằng lập trình.
-2. Cảm thấy hứng thú, nếu không -> quay lại bước 1.
+2. Cảm thấy hứng thú, nếu không &#8594; quay lại bước 1.
 3. Tìm hướng giải quyết, thiết kế chương trình.
-4. Cảm thấy khả thi, nếu không -> quay lại bước 3.
+4. Cảm thấy khả thi, nếu không &#8594; quay lại bước 3.
 5. Cài đặt ý tưởng bằng Java và biên dịch.
-6. Bị lỗi biên dịch, cảm thấy khó chịu -> quay lại bước 5 **hoặc** chương trình chạy thành công, cảm thấy vui sướng.
+6. Bị lỗi biên dịch, cảm thấy khó chịu &#8594; quay lại bước 5 **hoặc** chương trình chạy thành công, cảm thấy vui sướng.
 7. Kiểm thử chương trình.
-8. Thấy chương trình chạy không đúng, cảm thấy khó hiểu -> quay lại bước 3 **hoặc** chương trình chạy đúng, cảm thấy thoả mãn.
+8. Thấy chương trình chạy không đúng, cảm thấy khó hiểu &#8594; quay lại bước 3 **hoặc** chương trình chạy đúng, cảm thấy thoả mãn.
 9. Viết tài liệu về chương trình và bảo trì.
-10. Cảm thấy chán -> quay lại bước 1.
+10. Cảm thấy chán &#8594; quay lại bước 1.
 
 Hoặc bỏ qua vài bước cũng được.
 
@@ -30,11 +30,11 @@ Hướng dẫn máy tính chia trường hợp (nếu cái này thì làm cái n
 
 #### Ví dụ một vài cái xem nào.
 Ví dụ:
-- Ý nghĩa cuộc sống là gì? -> không biết mô tả thành các bước như nào -> không lập trình được.
-- Có những số nào nhỏ hơn 10 tạo thành 3 cạnh tam giác vuông? -> kiểm tra lần lượt tất cả các bộ ba số (1, 1, 1), (1, 1, 2), (1, 1, 3) ... (1, 1, 9), (1, 2, 1) ... (9, 9, 9) thấy bộ ba nào thoả mãn điều kiện tổng bình phương của 2 số đầu bằng bình phương của số thứ 3 thì tạo thành 3 cạnh tam giác được -> lập trình được.
-- Có 1 file lưu tên và email của 1000 người, giờ làm sao gửi email cho từng người nhưng dòng chữ "Kính gửi ..." có tên người tương ứng? -> mở file, đọc lần lượt tên và email của người đầu tiên, thay dấu "..." trong dòng chữ "Kính gửi ..." thành tên người đó rồi gửi mail, tiếp tục như vậy với người thứ hai, người thứ 3 đến hết file -> lập trình được.
-- Bài hát vừa ra hay hay không để còn nghe? -> chưa mô tả được cụ thể thế nào là hay thì chưa lập trình được.
-- Vẽ cái ảnh này lên màn hình, nếu ấn lên thì ảnh dịch lên, nếu ấn xuống thì ảnh dịch xuống -> vừa tự mô tả các bước rồi đó -> lập trình được.
+- Ý nghĩa cuộc sống là gì? &#8594; không biết mô tả thành các bước như nào &#8594; không lập trình được.
+- Có những số nào nhỏ hơn 10 tạo thành 3 cạnh tam giác vuông? &#8594; kiểm tra lần lượt tất cả các bộ ba số (1, 1, 1), (1, 1, 2), (1, 1, 3) ... (1, 1, 9), (1, 2, 1) ... (9, 9, 9) thấy bộ ba nào thoả mãn điều kiện tổng bình phương của 2 số đầu bằng bình phương của số thứ 3 thì tạo thành 3 cạnh tam giác được &#8594; lập trình được.
+- Có 1 file lưu tên và email của 1000 người, giờ làm sao gửi email cho từng người nhưng dòng chữ "Kính gửi ..." có tên người tương ứng? &#8594; mở file, đọc lần lượt tên và email của người đầu tiên, thay dấu "..." trong dòng chữ "Kính gửi ..." thành tên người đó rồi gửi mail, tiếp tục như vậy với người thứ hai, người thứ 3 đến hết file &#8594; lập trình được.
+- Bài hát vừa ra hay hay không để còn nghe? &#8594; chưa mô tả được cụ thể thế nào là hay thì chưa lập trình được.
+- Vẽ cái ảnh này lên màn hình, nếu ấn lên thì ảnh dịch lên, nếu ấn xuống thì ảnh dịch xuống &#8594; vừa tự mô tả các bước rồi đó &#8594; lập trình được.
 
 #### Có vấn đề mà không hứng thú làm thì có làm không?
 Nếu không bị bắt làm thì tìm cái khác.

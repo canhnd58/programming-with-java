@@ -43,6 +43,6 @@ Thích .-.
 
 #### Cần phải biết gì trước khi học lập trình Java?
 Có một vài điều kiện tiên quyết như sau:
-- Biết mở máy tính, click chuột, vào mạng -> Đang đọc cái này thì là biết rồi.
+- Biết mở máy tính, click chuột, vào mạng &#8594; Đang đọc cái này thì là biết rồi.
 - Biết gõ bàn phím.
 - Tiếng Anh IELTS 9.0 là một lợi thế.
