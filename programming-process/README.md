@@ -61,10 +61,10 @@ Hoặc thiết kế kiểu khác cũng được.
 File như vậy gọi là file mã nguồn ([source code](../terminology.md#source-code)). Việc gõ ra file mã nguồn gọi là cài đặt thuật toán, hay còn gọi là [code](../terminology.md#code).
 
 #### Biên dịch là gì?
-Thực ra thì máy tính chỉ hiểu ngôn ngữ của nó thôi, muốn giao tiếp với nó mình phải học ngôn ngữ của nó. Một số người rảnh rỗi đã ngồi học ngôn ngữ của nó rồi và viết ra một chương trình gọi là trình biên dịch ([compiler](../terminology.md#compiler)) để dịch lệnh ở ngôn ngữ Java sang ngôn ngữ máy, hay mã máy ([machine code](../terminology.md#machine-code)). Java dễ học hơn nên mình học ngôn ngữ Java, sau đó dùng trình biên dịch để dịch sang ngôn ngữ máy. Từ file mã nguồn đuôi `.java` sau khi biên dịch sẽ ra một file mã máy đuôi `.class` (thực ra với Java là mã máy ảo). Sau đó sử dụng file `.class` để chạy chương trình.
+Thực ra thì máy tính chỉ hiểu ngôn ngữ của nó thôi, muốn giao tiếp với nó mình phải học ngôn ngữ của nó. Một số người rảnh rỗi đã ngồi học ngôn ngữ của nó rồi và viết ra một chương trình gọi là trình biên dịch ([compiler](../terminology.md#compiler)) để dịch lệnh ở ngôn ngữ Java sang ngôn ngữ máy, hay mã máy ([machine code](../terminology.md#machine-code)). Java dễ học hơn nên mình học ngôn ngữ Java, sau đó dùng trình biên dịch để dịch sang ngôn ngữ máy. Từ file mã nguồn đuôi `.java` sau khi biên dịch sẽ ra một file mã máy đuôi `.class` (thực ra với Java là mã máy ảo[\*](TLDR.md#mã-máy-ảo-là-sao)). Sau đó sử dụng file `.class` để chạy chương trình.
 
 #### Làm thế nào để chạy chương trình?
-Một máy tính muốn chạy chương trình Java phải cài sẵn máy ảo Java ([JVM](../terminology.md#jvm) - Java Virtual Machine). Khi chạy chương trình, máy ảo Java đọc các lệnh trong file `.class` và thực thi lần lượt. Giờ muốn chạy một file tên là `program.class`, mở giao diện dòng lệnh (cmd trên Windows, hay terminal trên Linux và MacOS) bên trong thư mục chứa file `program.class`, gõ lệnh như sau rồi ấn Enter:
+Một máy tính muốn chạy chương trình Java phải cài sẵn máy ảo Java[\*](TLDR.md#máy-ảo-java-là-gì) ([JVM](../terminology.md#jvm) - Java Virtual Machine). Khi chạy chương trình, máy ảo Java đọc các lệnh trong file `.class` và thực thi lần lượt. Giờ muốn chạy một file tên là `program.class`, mở giao diện dòng lệnh ([CLI](../terminology.md#CLI) - Command Line Interface) bên trong thư mục chứa file `program.class`, gõ lệnh như sau rồi ấn Enter:
 ```
 java program
 ```
@@ -86,6 +86,9 @@ Sẽ thấy vui .-.
 #### Kiểm thử là gì?
 Chương trình đã chạy được không có nghĩa là chạy đúng. Kiểm thử là kiểm tra chương trình với nhiều trường hợp khác nhau để đảm bảo không có trường hợp chương trình chạy sai.
 
+#### Chương trình chạy sai nhưng không biết do đâu thì phải làm sao?
+TODO
+
 #### Sao phải viết tài liệu?
 Lâu không động vào mình sẽ không nhớ chương trình mình viết từ đời nào có tác dụng gì, hoặc không nhớ đoạn này trong chương trình đang làm gì, hoặc đưa người khác làm tiếp người ta không hiểu gì nên cần viết tài liệu. Tài liệu mô tả chương trình làm gì, các thành phần trong chương trình làm gì.
 
@@ -94,3 +97,5 @@ Bảo trì là đảm bảo chương trình vẫn còn chạy đúng theo thời
 
 #### Chương trình nào cùng cần viết tài liệu với bảo trì à?
 Chương trình nào dùng một lần rồi vứt thì không cần.
+
+[Còn nữa, mà dài lắm đừng đọc.](TLDR.md)

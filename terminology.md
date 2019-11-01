@@ -8,6 +8,11 @@
 
 Là các bước cụ thể mà theo đó máy tính có thể giải quyết một vấn đề.
 
+#### CLI
+*Giao diện dòng lệnh ([Các bước lập trình](programming-process/README.md#làm-thế-nào-để-chạy-chương-trình))*
+
+Là giao diện cho phép điều khiển máy tính, chạy các chương trình qua các dòng lệnh (thay vì việc click chuột, bấm nút ...). Có thể dùng chương trình Command Prompt trên Windows hay Terminal trên Linux và MacOS để gõ dòng lệnh.
+
 #### Code
 *Mã ([Các bước lập trình](programming-process/README.md#cài-đặt-là-làm-gì))*
 
@@ -19,6 +24,10 @@ Nếu là động từ, code là việc gõ ra các dòng lệnh. Nếu là danh
 
 Là chương trình dùng để chuyển đổi từ file [mã nguồn](#source-code) sang file [mã máy](#machine-code).
 
+#### Debugger
+*Trình gỡ lỗi ([Các bước lập trình](programming-process/README.md#chương-trình-chạy-sai-nhưng-không-biết-do-đâu-thì-phải-làm-sao))*
+
+TODO
 
 #### IDE
 *Môi trường phát triển tích hợp ([Các bước lập trình](programming-process/README.md#làm-thế-nào-để-chạy-chương-trình))*

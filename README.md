@@ -1,7 +1,10 @@
 # Lập trình Java
 
 #### Trang gì đây?
-Trang này gồm lý thuyết và bài tập để biết lập trình bằng ngôn ngữ Java.  
+Trang này gồm lý thuyết và bài tập để biết lập trình bằng ngôn ngữ Java.
+
+#### Ai nên đọc?
+Ai chưa biết lập trình và muốn biết lập trình.
 
 #### Dùng như nào?
 Đọc từ đầu đến cuối thôi.
