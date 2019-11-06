@@ -33,6 +33,12 @@ Chắc do rảnh quá :|
 #### Thế sao lại học Java mà không phải cái khác?
 Thích .-.
 
+#### Học Java xong học ngôn ngữ khác có dễ không?
+Về cơ bản các ngôn ngữ lập trình không khác nhau nhiều vì đều bị giới hạn bởi những gì máy tính có thể làm. Khác với ngôn ngữ thường ngày, ngôn ngữ lập trình chỉ có vài *từ vựng* và *ngữ pháp* cũng không lằng nhằng phức tạp. Học lập trình quan trọng là học cách suy nghĩ logic, làm sao để truyền đạt ý tưởng thành các bước rõ ràng, cụ thể, không mập mờ ý nghĩa. Nắm được các khái niệm cơ bản của lập trình và tư duy lập trình có thể chuyển đổi giữa các ngôn ngữ mà không quá khó khăn.
+
+#### Có gì ngôn ngữ này làm được mà ngôn ngữ khác không làm được không?
+Vẫn là cái máy tính đó, nó vẫn chỉ làm được những cái đó thì các ngôn ngữ khác nhau chỉ là công cụ giao tiếp khác nhau thôi. Tuy nhiên với cùng một ý tưởng, một số ngôn ngữ truyền đạt dễ, một số khác truyền đạt khó hơn.
+
 #### OK, thế có ứng dụng thực tiễn nào đang sử dụng Java?
 - Game [Minecraft](https://www.minecraft.net/) viết bằng Java.
 - Các trang như [linkedin](https://www.linkedin.com/), [ebay](https://www.ebay.com/), [amazon web service](https://aws.amazon.com/) viết bằng Java.
@@ -45,6 +51,10 @@ Thích .-.
 Có một vài điều kiện tiên quyết như sau:
 - Biết mở máy tính, click chuột, vào mạng &#8594; Đang đọc cái này thì là biết rồi.
 - Biết gõ bàn phím.
-- Tiếng Anh IELTS 9.0 là một lợi thế.
+- IELTS 9.0 là một lợi thế.
+
+.  
+.  
+.  
 
 [Còn nữa, mà dài lắm đừng đọc.](TLDR.md)

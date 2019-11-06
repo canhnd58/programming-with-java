@@ -98,4 +98,8 @@ Bảo trì là đảm bảo chương trình vẫn còn chạy đúng theo thời
 #### Chương trình nào cùng cần viết tài liệu với bảo trì à?
 Chương trình nào dùng một lần rồi vứt thì không cần.
 
+.  
+.  
+.  
+
 [Còn nữa, mà dài lắm đừng đọc.](TLDR.md)
