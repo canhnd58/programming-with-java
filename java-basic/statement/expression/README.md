@@ -27,13 +27,11 @@ Biểu thức thêm dấu `;` ở cuối thì thành câu lệnh biểu thức t
 #### Có những giá trị cụ thể nào trong Java?
 Java có những giá trị cụ thể sau:
 - Các số nguyên như: `0`, `1`, `100`, `-100`.
-- Các số thực như: `0.1`, `-10.25`, `0.0314E2` (có nghĩa là 0.0314 * 10^2)
+- Các số thực như: `0.1`, `-10.25`.
 - Các kí tự như: `'a'`, `'B'`, `'%'`, `'3'` (các kí tự luôn đặt trong cặp dấu nháy đơn `'` để phân biệt với số, toán tử, và tên biến).
 - Các xâu (hay còn gọi là chuỗi) kí tự như: `"xin chao"`, `"hello world!"`, `"a"` (các chuỗi kí tự luôn nằm trong cặp dấu nháy kép `"` để phân biệt với tên biến).
 - Hai giá trị boolean: `true` và `false` (chú ý không có dấu nháy kép).
 - Giá trị đặc biệt thể hiện việc không có giá trị: `null`.
-
-Các giá trị số nguyên thuộc kiểu dữ liệu `int`, giá trị số thực thuộc kiểu `double`.
 
 #### Có những toán tử nào?
 - Toán tử gán:
@@ -99,26 +97,32 @@ number = 4;
 sum = a + 5;
 sum = sum + 6;
 ```
-Khi gặp lệnh `number = 4`, chương trình lưu số `4` vào vùng nhớ của biến `number`. Khi gặp lệnh `sum = number + 5`, chương trình lấy giá trị đang có trong biến `number` cộng với `5` thu được kết quả là `9` và gán `9` vào trong vùng nhớ của biến `sum`. Khi gặp lệnh `sum = sum + 6`, chương trình lấy giá trị trong biến `sum` cộng với `6` thu được kết quả là `15` và gán `15` vào trong vùng nhớ của biến `sum`. Kết thúc 3 lệnh trên, biến `number` có giá trị là `4` và biến `sum` có giá trị là `15`.
+Khi gặp lệnh `number = 4`, chương trình lưu số `4` vào vùng nhớ của biến `number`. Khi gặp lệnh `sum = number + 5`, chương trình lấy giá trị đang có trong biến `number` cộng với `5` thu được kết quả là `9` và gán `9` vào trong vùng nhớ của biến `sum`. Khi gặp lệnh `sum = sum + 6`, chương trình lấy giá trị trong biến `sum` cộng với `6` thu được kết quả là `15` và gán `15` vào trong vùng nhớ của biến `sum`. Kết thúc 4 lệnh trên, biến `number` có giá trị là `4` và biến `sum` có giá trị là `15`.
 
-#### Lời gọi đến phương thức là gì?
-Nếu không gọi đến phương thức khác, một chương trình luôn chỉ thực hiện các lệnh trong phương thức `main`. Nếu phương thức `main` gọi đến các phương thức khác thì phương thức đó mới được thực thi. Một lời gọi đến phương thức có thể thu được một giá trị hoặc không. Nếu phương thức đưa ra một giá trị, có thể dùng làm các toán hạng trong biểu thức.
+Phép toán gán và lệnh khai báo biến còn có thể gộp chung thành 1 lệnh:
+```java
+int a = 5;
+```
+Lệnh trên tương đương với 2 lệnh:
+```java
+int a;
+a = 5;
+```
 
-Cụ thể gọi đến phương thức khác như thế nào sẽ bàn kĩ hơn trong các phần sau.
-
-#### Một biểu thức có nhiều toán tử và nhiều toán hạng thì thứ tự thực hiện như thế nào?
+#### Một biểu thức có nhiều toán tử thì thứ tự thực hiện như thế nào?
 Độ ưu tiên của các toán tử như sau (các toán tử ở dòng càng trên càng được thực hiện trước):
 
-Toán tử đơn ngôi  
-&#8594; các toán tử `*`, `/` và `%`  
-&#8594; các toán tử `+` và `-`  
-&#8594; các toán tử `>`, `>=`, `<`, `<=`  
-&#8594; các toán tử `==`, `!=`  
-&#8594; toán tử `&&`  
-&#8594; toán tử `||`  
-&#8594; toán tử tam ngôi  
-&#8594; toán tử gán.
+&#8594; Toán tử đơn ngôi  
+&#8594; Các toán tử `*`, `/` và `%`  
+&#8594; Các toán tử `+` và `-`  
+&#8594; Các toán tử `>`, `>=`, `<`, `<=`  
+&#8594; Các toán tử `==`, `!=`  
+&#8594; Toán tử `&&`  
+&#8594; Toán tử `||`  
+&#8594; Toán tử tam ngôi  
+&#8594; Toán tử gán.
 
+Nếu các toán tử có độ ưu tiên như nhau thì các toán tử đó thực hiện từ trái sang phải.
 Có thể dùng thêm cặp dấu ngoặc đơn để chỉ định phần sẽ được thực hiện trước.
 Ví dụ:
 
@@ -132,3 +136,33 @@ Ví dụ:
 #### Làm sao để nhớ thứ tự thực hiện các phép toán?
 Dùng nhiều thì nhớ thôi, nếu không nhớ thì cứ dùng dấu ngoặc đơn cho chắc.
 
+#### Lời gọi đến phương thức là gì?
+Một phương thức là một chuỗi các câu lệnh cùng nhau thực hiện một nhiệm vụ nào đó với một đầu vào cho trước. Một phương thức có thể đưa ra một kết quả hoặc không. Nếu phương thức đưa ra một kết quả, có thể dùng phương thức như một toán hạng trong biểu thức. Như đã biết, một chương trình chỉ chạy các câu lệnh trong phương thức `main` nếu phương thức `main` không gọi đến các phương thức khác. Cú pháp để gọi một phương thức như sau:
+
+```
+<tên phương thức><dấu ngoặc mở><các đối số cách nhau dấu phẩy><dấu ngoặc đóng>
+```
+
+Ví dụ:
+```java
+Math.pow(2, 3)
+```
+là một lời gọi đến phương thức `Math.pow` với đầu vào là hai số `2` và `3`, phương thức này làm nhiệm vụ tính `2` mũ `3` và đưa ra kết quả là `8`.
+
+Có thể dùng phương thức trên trong một biểu thức như sau:
+```java
+int a;
+a = 1 + Math.pow(2, 3) + 4;
+```
+
+Biểu thức `1 + Math.pow(2, 3) + 4` có kết quả là `13`, được gán vào biến `a`. Sau 2 câu lệnh trên, biến `a` lưu số `13`.
+
+Nếu phương thức không đưa ra giá trị gì thì không thể làm toán hạng trong biểu thức. Ví dụ phương thức `System.out.println` làm nhiệm vụ in ra màn hình và không đưa ra kết quả gì nên phải đứng một mình. Ví dụ câu lệnh sau không thực hiện được:
+
+```java
+int a;
+a = System.out.println("Dong nay se bi loi");
+```
+
+#### Làm sao biết phương thức nào làm gì và có đưa ra kết quả hay không?
+Google là bạn thân nhất của lập trình viên.

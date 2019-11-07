@@ -64,18 +64,13 @@ File như vậy gọi là file mã nguồn ([source code](../terminology.md#sour
 Thực ra thì máy tính chỉ hiểu ngôn ngữ của nó thôi, muốn giao tiếp với nó mình phải học ngôn ngữ của nó. Một số người rảnh rỗi đã ngồi học ngôn ngữ của nó rồi và viết ra một chương trình gọi là trình biên dịch ([compiler](../terminology.md#compiler)) để dịch lệnh ở ngôn ngữ Java sang ngôn ngữ máy, hay mã máy ([machine code](../terminology.md#machine-code)). Java dễ học hơn nên mình học ngôn ngữ Java, sau đó dùng trình biên dịch để dịch sang ngôn ngữ máy. Từ file mã nguồn đuôi `.java` sau khi biên dịch sẽ ra một file mã máy đuôi `.class` (thực ra với Java là mã máy ảo[\*](TLDR.md#mã-máy-ảo-là-sao)). Sau đó sử dụng file `.class` để chạy chương trình.
 
 #### Làm thế nào để chạy chương trình?
-Một máy tính muốn chạy chương trình Java phải cài sẵn máy ảo Java[\*](TLDR.md#máy-ảo-java-là-gì) ([JVM](../terminology.md#jvm) - Java Virtual Machine). Khi chạy chương trình, máy ảo Java đọc các lệnh trong file `.class` và thực thi lần lượt. Giờ muốn chạy một file tên là `program.class`, mở giao diện dòng lệnh ([CLI](../terminology.md#CLI) - Command Line Interface) bên trong thư mục chứa file `program.class`, gõ lệnh như sau rồi ấn Enter:
-```
-java program
-```
-
-Nếu không biết sử dụng giao diện dòng lệnh, có thể cài đặt các phần mềm như [NetBeans](https://netbeans.org/), [Eclipse](https://www.eclipse.org/) hay [IntelliJ IDEA](https://www.jetbrains.com/idea/). Các phần mềm này được gọi là môi trường phát triển tích hợp ([IDE](../terminology.md#ide) - Integrated Development Environment), vừa có vùng để soạn thảo, vừa có nút để biên dịch và chạy. Ấn nút là chạy.
+Một máy tính muốn chạy chương trình Java phải cài sẵn máy ảo Java[\*](TLDR.md#máy-ảo-java-là-gì) ([JVM](../terminology.md#jvm) - Java Virtual Machine). Khi chạy chương trình, máy ảo Java đọc các lệnh trong file `.class` và thực thi lần lượt. Để sử dụng máy ảo Java, có thể cài đặt các phần mềm như [NetBeans](https://netbeans.org/), [Eclipse](https://www.eclipse.org/) hay [IntelliJ IDEA](https://www.jetbrains.com/idea/). Các phần mềm này được gọi là môi trường phát triển tích hợp ([IDE](../terminology.md#ide) - Integrated Development Environment), vừa có vùng để soạn thảo, vừa có nút để biên dịch và chạy. Ấn nút là chạy. Với NetBeans, có thể dùng phím F6 để chạy chương trình. Các ví dụ ở các phần sau sẽ dùng NetBeans để minh hoạ.
 
 #### Cài đặt xong không chạy chương trình được luôn à?
 Mỗi ngôn ngữ lập trình đều có các nguyên tắc phải tuân theo thì trình biên dịch mới hiểu rồi dịch. Tưởng mình viết đúng nhưng nhiều lúc không đúng, trình biên dịch sẽ báo lỗi là "không hiểu mày viết gì không dịch được", thì sẽ không chạy chương trình được.
 
 #### Làm thế nào để sửa lỗi?
-Mỗi khi có chỗ không hiểu, trình biên dịch sẽ báo cho mình biết nó không hiểu ở dòng số bao nhiêu và cố đoán xem mình thiếu cái gì. Dựa vào đó mà chỉnh sửa lại mã nguồn của mình.
+Mỗi khi có chỗ không hiểu, trình biên dịch sẽ báo cho mình biết nó không hiểu ở dòng số bao nhiêu và cố đoán xem mình thiếu cái gì. Nếu dùng NetBeans, các dòng mà trình biên dịch không hiểu sẽ bị gạch chân màu đỏ, trỏ chuột vào đó để xem lỗi và chỉnh sửa lại mã nguồn của mình.
 
 #### Bị lỗi biên dịch không thấy khó chịu thì sao?
 :|
