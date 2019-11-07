@@ -92,7 +92,7 @@ Vậy thì nhập 100 số nguyên, in ra màn hình theo thứ tự ngược l�
 
 #### Dùng 100 biến a1, a2, a3, ..., a100?
 
-:|
+:\|
 
 #### Thế bài kia dùng mảng như nào?
 Như này nè:
@@ -122,7 +122,7 @@ Những cái trên gọi là mảng 1 chiều, còn có mảng nhiều chiều n
 
 #### Không học được không?
 
-Không :|
+Không :\|
 
 #### Mảng nhiều chiều là cái gì?
 
@@ -172,10 +172,12 @@ System.out.println(table[0].length);    // 3
 
 Có package `java.utils.Arrays` chứa một số phương thức static (static method) để làm việc với mảng. Ví dụ với mảng số nguyên có:
 - `static void sort(int[] a)`: sắp xếp các phần tử của mảng `a` tăng dần.
+
 ```java
 int[] arr = {3, 1, 4, 2};
 Arrays.sort(arr); // Mảng thành {1, 2, 3, 4}
 ```
+
 - `static void fill(int[] a, int value)`: gán tất cả các phần tử của mảng `a` thành `value`.
 
 ```java
