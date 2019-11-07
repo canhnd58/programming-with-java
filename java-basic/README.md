@@ -7,4 +7,7 @@ Các khái niệm cơ bản của Java như biến, biểu thức, câu lệnh, 
 1. [Biến, biểu thức, câu lệnh](statement)
 1. Phương thức
 1. Lớp
+1. Xâu kí tự
+1. [Mảng](array)
+1. Generics
 1. Package
