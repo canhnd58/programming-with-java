@@ -98,7 +98,7 @@ Vậy thì nhập 100 số nguyên, in ra màn hình theo thứ tự ngược l�
 Như này nè:
 
 ```java
-import java.utils.Scanner;
+import java.util.Scanner;
 
 public class ArrayExample {
     public static void main(String[] args) {
@@ -170,7 +170,7 @@ System.out.println(table[0].length);    // 3
 
 #### Còn gì nữa không?
 
-Có package `java.utils.Arrays` chứa một số phương thức static (static method) để làm việc với mảng. Ví dụ với mảng số nguyên có:
+Có package `java.util.Arrays` chứa một số phương thức static (static method) để làm việc với mảng. Ví dụ với mảng số nguyên có:
 - `static void sort(int[] a)`: sắp xếp các phần tử của mảng `a` tăng dần.
 
 ```java
