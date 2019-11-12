@@ -3,21 +3,21 @@
 ### Bài 1
 Chương trình có cấu trúc thư mục như sau gồm những package nào?
 ```
-BaiTap
+Exercise
 |---build
 |   |---classes
-|       |---bai1
+|       |---ex1
 |       |   |---HelloWorld.class
 |       |
-|       |---bai2
+|       |---ex2
 |           |---ByeWorld.class
 |           |---ByeYou.class
 |
 |---src
-|   |---bai1
+|   |---ex1
 |   |   |---HelloWorld.java
 |   |
-|   |---bai2
+|   |---ex2
 |       |---ByeWorld.java
 |       |---ByeYou.java
 |
@@ -29,7 +29,7 @@ Khi chương trình gồm 2 file sau được chạy, các lệnh nào sẽ đư
 
 File `ByeWorld.java`:
 ```java
-package bai2;
+package ex2;
 public class ByeWorld {
     public static void bye(String[] args) {
         System.out.println("vinh");
@@ -42,7 +42,7 @@ public class ByeWorld {
 
 File `ByeYou.java`:
 ```java
-package bai2;
+package ex2;
 public class ByeYou {
     public static void main(String[] args) {
         System.out.println("biet");
@@ -54,20 +54,20 @@ public class ByeYou {
 ```
 
 ### Bài 3:
-Chương trình với cấu trúc thư mục và nội dung file `Bai3.java` như sau có chạy được không?
+Chương trình với cấu trúc thư mục và nội dung file `Exercise.java` như sau có chạy được không?
 
 ```
-Bai3
+Exercise3
 |---src
-    |---bai3
-        |---Bai3.java
+    |---ex3
+        |---Exercise.java
 ```
 
-File `Bai3.java`:
+File `Exercise.java`:
 ```
 public class Hello {
     public static void main(String[] args) {
-        System.out.println("Xin chao cac ban");
+        System.out.println("Hello");
     }
 }
 ```
