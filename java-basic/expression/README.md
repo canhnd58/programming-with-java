@@ -27,6 +27,9 @@ Java có những giá trị cụ thể (literal) sau:
 - Giá trị tham chiếu (có thể hiểu là vị trí của một vùng nhớ trong bộ nhớ máy tính).
 - Giá trị đặc biệt thể hiện việc không có giá trị: `null`.
 
+#### 10 với 10.0 không phải là một à?
+Không, `10` được coi là một số nguyên còn `10.0` được coi là một số thực. Cụ thể hơn, `10` thuộc kiểu dữ liệu `int` còn `10.0` thuộc kiểu dữ liệu `double`.
+
 #### Giá trị tham chiếu là gì?
 Sẽ nói sau ở bài về lớp (class).
 
@@ -45,9 +48,9 @@ Cũng nói ở bài lớp (class).
 |`-`|Hiệu|`5 - 2`|`3`|
 |`*`|Tích|`5 * 2`|`10`|
 |`/`|Thương|`5 / 2`|`2`|
-|`%`|Lấy phần dư|`5 / 2`|`1`|
+|`%`|Lấy phần dư|`5 % 2`|`1`|
 
-Các phép toán sẽ khác nhau nếu toán hạng có kiểu dữ liệu khác nhau. Ví dụ: `5 + 6` có kết quả là `10`, `5 + " nguoi"` sẽ có kết quả là `"5 nguoi"`. Nếu toán tử `/` dùng để chia 2 số nguyên thì kết quả luôn là số nguyên (bỏ đi phần thập phân). Ví dụ: `5 / 2` kết quả là `2`, còn `5 / 2.0` kết quả là `2.5`.
+Các phép toán sẽ khác nhau nếu toán hạng có kiểu dữ liệu khác nhau. Ví dụ: `5 + 6` có kết quả là `11`, `5 + " nguoi"` sẽ có kết quả là `"5 nguoi"`. Nếu toán tử `/` dùng để chia 2 số nguyên thì kết quả luôn là số nguyên (bỏ đi phần thập phân). Ví dụ: `5 / 2` kết quả là `2`, còn `5 / 2.0` kết quả là `2.5`.
 
 - Toán tử so sánh:
 
@@ -84,7 +87,7 @@ Ngoài ra, còn một số toán tử khác là kết hợp các toán tử trê
 Nếu toán hạng là biến thì giá trị mà biến đang lưu sẽ được sử dụng làm toán hạng. Trừ trường hợp biến nằm ở vế trái của toán tử gán, lúc này chương trình làm việc với vùng nhớ chứ không quan tâm đến giá trị trong biến.
 
 Ví dụ:
-```
+```java
 int number, sum;
 number = 4;
 sum = number + 5;
@@ -119,7 +122,7 @@ int a = 1000;
 short b = (short) a;
 ```
 
-Ở ví dụ trên, giá trị trong biến `a` thuộc kiểu `int` được chuyển sang kiểu dữ liệu `short`, sau đó lưu vào biến `b` thuộc kiểu dữ liệu short.
+Ở ví dụ trên, giá trị trong biến `a` thuộc kiểu `int` được chuyển sang kiểu dữ liệu `short`, sau đó lưu vào biến `b` thuộc kiểu dữ liệu `short`.
 
 Khi gán từ kiểu dữ liệu nhỏ sang kiểu dữ liệu lớn thì không cần thiết phải ghi rõ là đang ép kiểu. Ví dụ:
 
@@ -141,7 +144,7 @@ Biến `a` sẽ lưu giá trị `5` do toán tử `/` là phép chia lấy phầ
 #### Một biểu thức có nhiều toán tử thì thứ tự thực hiện như thế nào?
 Độ ưu tiên của các toán tử như sau (các toán tử ở dòng càng trên càng được thực hiện trước):
 
-&#8594; Toán tử đơn ngôi, `++`, `--`
+&#8594; Toán tử đơn ngôi, `++`, `--`  
 &#8594; Các toán tử `*`, `/`, `%`  
 &#8594; Các toán tử `+`, `-`  
 &#8594; Các toán tử `>`, `>=`, `<`, `<=`  

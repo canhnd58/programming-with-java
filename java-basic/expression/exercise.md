@@ -33,6 +33,6 @@ Viết chương trình làm các thao tác sau:
 - Chia biến `number` cho `22`, lấy phần dư nhân với `10` và gán lại vào `number`.
 - Tăng biến `number` lên `50` đơn vị.
 - Nhân `number` với `20` và gán lại vào `number`.
-- Tăng biến `number lên `1019` đơn vị.
+- Tăng biến `number` lên `1019` đơn vị.
 - In ra màn hình dòng chữ `Tuổi của mình là: ` kèm theo kết quả biểu thức `(number - yearOfBirth) % 100`.
 
