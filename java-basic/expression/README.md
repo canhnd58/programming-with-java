@@ -87,10 +87,10 @@ Ví dụ:
 ```
 int number, sum;
 number = 4;
-sum = a + 5;
+sum = number + 5;
 sum = sum + 6;
 ```
-Khi gặp lệnh `number = 4`, chương trình lưu số `4` vào biến `number` (lưu số `4` vào vùnh nhớ được đặt tên là `number`). Khi gặp lệnh `sum = number + 5`, chương trình lấy giá trị đang có trong biến `number` cộng với `5` thu được kết quả là `9` và gán `9` vào trong biến `sum`. Khi gặp lệnh `sum = sum + 6`, chương trình lấy giá trị trong biến `sum` cộng với `6` thu được kết quả là `15` và gán `15` vào trong biến `sum`. Kết thúc 4 lệnh trên, biến `number` có giá trị là `4` và biến `sum` có giá trị là `15`.
+Khi gặp lệnh `number = 4`, chương trình lưu số `4` vào biến `number` (lưu số `4` vào vùng nhớ được đặt tên là `number`). Khi gặp lệnh `sum = number + 5`, chương trình lấy giá trị đang có trong biến `number` cộng với `5` thu được kết quả là `9` và gán `9` vào trong biến `sum`. Khi gặp lệnh `sum = sum + 6`, chương trình lấy giá trị trong biến `sum` cộng với `6` thu được kết quả là `15` và gán `15` vào trong biến `sum`. Kết thúc 4 lệnh trên, biến `number` có giá trị là `4` và biến `sum` có giá trị là `15`.
 
 Phép toán gán và lệnh khai báo biến còn có thể gộp chung thành 1 lệnh:
 ```java
