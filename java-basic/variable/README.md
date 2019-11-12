@@ -6,9 +6,6 @@ Mỗi máy tính đều sử dụng bộ nhớ (RAM) khi chạy chương trình.
 
 Biến (variable) là các vùng nhớ trong bộ nhớ máy tính lưu giữ tạm thời trạng thái của một chương trình. Khi chương trình chạy gặp một lệnh khai báo biến, chương trình sẽ yêu cầu máy tính cấp cho một vùng nhớ, máy tính sẽ đảm bảo không chương trình nào khác được đụng vào vùng nhớ đó. Chương trình kết thúc thì tất cả các biến được cấp sẽ được giải phóng (máy tính tuỳ ý cấp cho chương trình khác).
 
-#### Hết bộ nhớ để cấp phát thì sao?
-Nếu máy tính không còn bộ nhớ để cấp cho chương trình, chương trình sẽ kết thúc và đưa ra lỗi `OutOfMemoryError`.
-
 #### Lệnh khai báo biến trông như thế nào?
 Một biến gồm kiểu dữ liệu (data type) và tên biến. Kiểu dữ liệu là loại dữ liệu biến có thể lưu, một biến sau khi đã khai báo chỉ lưu được 1 loại dữ liệu. Biến cần được đặt tên để các lệnh sau đó có thể dùng.
 
@@ -37,7 +34,7 @@ int number3;
 
 #### Có các kiểu dữ liệu nào?
 
-Có 8 kiểu dữ liệu cơ sở (primitive data types), được khai báo bằng 8 từ khoá như sau:
+Có 8 kiểu dữ liệu cơ sở (primitive data types), được khai báo bằng 8 từ khoá ([keyword](#../../terminology.md#keyword) như sau:
 - 4 kiểu dữ liệu lưu số nguyên:
     - `byte`: chiếm 1 byte trong bộ nhớ, lưu được các số từ `-128` đến `127`.
     - `short`: chiếm 2 byte trong bộ nhớ, lưu được các số từ `-32,768` đến `32,767`.
@@ -93,6 +90,12 @@ Ví dụ đặt tên biến như sau không bị lỗi nhưng bị chửi:
 - `padfafwerdv`
 - `TEnCUAtoi`
 - `$1234alo`
+
+#### Lệnh khai báo biến có cần để ở đầu chương trình không?
+Câu lệnh khai báo biến có thể ở bất cứ đâu trong một phương thức mỗi khi mình cần thêm một biến để tạm thời lưu một giá trị.
+
+#### Máy tính hết bộ nhớ để cấp phát thì sao?
+Nếu máy tính không còn bộ nhớ để cấp cho chương trình, chương trình sẽ kết thúc và đưa ra lỗi `OutOfMemoryError`.
 
 #### Biến được dùng như thế nào?
 Biến dùng trong biểu thức, hỏi biểu thức là gì đi.
