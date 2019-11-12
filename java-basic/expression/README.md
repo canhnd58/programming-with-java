@@ -47,7 +47,7 @@ Cũng nói ở bài lớp (class).
 |`/`|Thương|`5 / 2`|`2`|
 |`%`|Lấy phần dư|`5 / 2`|`1`|
 
-Ví dụ: Các phép toán sẽ khác nhau nếu toán hạng có kiểu dữ liệu khác nhau. Ví dụ: `5 + 6` có kết quả là `10`, `5 + " nguoi"` sẽ có kết quả là `"5 nguoi"`. Nếu toán tử `/` dùng để chia 2 số nguyên thì kết quả luôn là số nguyên (bỏ đi phần thập phân). Ví dụ: `5 / 2` kết quả là `2`, còn `5 / 2.0` kết quả là `2.5`.
+Các phép toán sẽ khác nhau nếu toán hạng có kiểu dữ liệu khác nhau. Ví dụ: `5 + 6` có kết quả là `10`, `5 + " nguoi"` sẽ có kết quả là `"5 nguoi"`. Nếu toán tử `/` dùng để chia 2 số nguyên thì kết quả luôn là số nguyên (bỏ đi phần thập phân). Ví dụ: `5 / 2` kết quả là `2`, còn `5 / 2.0` kết quả là `2.5`.
 
 - Toán tử so sánh:
 
@@ -209,4 +209,5 @@ Ví dụ:
 .  
 
 [Còn nữa, mà dài lắm đừng đọc](TLDR.md)
+
 [Bài tập](exercise.md)
