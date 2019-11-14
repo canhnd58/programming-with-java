@@ -220,4 +220,4 @@ Lệnh `getFactorial(n)` tức `getFactorial(3)` đưa ra kết quả là 6 do t
 .  
 .  
 
-Bài tập
+[Bài tập](exercise.md)
