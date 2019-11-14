@@ -3,7 +3,7 @@
 *Kiến thức cần biết:* [compiler](../../terminology.md#compiler), [JVM](../../terminology.md#JVM), [JDK](../../terminology.md#JDK)
 
 #### Chạy được chương trình in ra chữ Hello World rồi nhưng không hiểu nó làm gì!
-Giờ cần hiểu cấu trúc của một chương trình Java đã.
+Vậy bây giờ tìm hiểu cấu trúc của một chương trình Java.
 
 #### Một chương trình Java gồm những gì?
 Một chương trình Java là một project, một project (có thể) gồm nhiều package, một package (có thể) gồm nhiều class, một class (có thể) gồm nhiều method, một method (có thể) gồm nhiều statement .-.
@@ -37,6 +37,29 @@ public class HelloWorld {
 Ở ví dụ trên, thư mục `src` chứa các package mình tạo ra cho chương trình, ở đây có một package tên là `helloworld`. Trong package `helloworld` có một lớp `HelloWorld` nằm trong file `HelloWorld.java`. Trong lớp `HelloWorld` có một phương thức tên là `main`. Trong phương thức `main` có một lệnh `System.out.println("Hello World!");` là lệnh yêu cầu máy tính in ra màn hình dòng chữ `Hello World!` và xuống dòng mới.
 
 Trong Java, mỗi file `.java` tương ứng với 1 lớp và tên file phải trùng với tên lớp, một câu lệnh luôn kết thúc bằng dấu `;`, nếu không sẽ bị lỗi biên dịch. Các câu lệnh có thể viết trên cùng một dòng hoặc mỗi dòng một lệnh. Cả file `HelloWorld.java` như trên có thể viết thành còn một dòng cũng được.
+
+Ngoài ra trong file mã nguồn còn có thể có các dòng [comment](../../terminology.md#comment) có tác dụng giải thích thêm ý nghĩa các phần của chương trình. Comment chỉ để người lập trình đọc, trình biên dịch bỏ qua hết các phần comment khi biên dịch.
+
+#### Comment viết như thế nào?
+Có 2 cách viết comment: nếu comment trên 1 dòng thì đặt 2 dấu `//` trước phần muốn comment, nếu comment trên nhiều dòng thì đặt các dòng đó trong cặp `/*` và `*/`.
+Ví dụ:
+
+```java
+package helloworld;
+
+/*
+    Đây là chương trình Hello World.
+    Chương trình này in ra màn hình dòng chữ "Hello World!".
+*/
+public class HelloWorld {
+
+    // Đây là hàm main
+    public static void main(String[] args) {
+        System.out.println("Hello World!"); // Lệnh in ở đây
+    }
+
+}
+```
 
 #### Giờ có nhiều lớp, nhiều phương thức, nhiều lệnh thì câu lệnh nào được thực hiện trước?
 Một chương trình Java luôn phải có một lớp có chứa phương thức `main`. Khi biên dịch xong và chạy chương trình, các lệnh trong phương thức `main` được thực hiện từ trên xuống dưới, xong lệnh trước mới thực hiện lệnh sau. Kết thúc phương thức `main` cũng là kết thúc chương trình.

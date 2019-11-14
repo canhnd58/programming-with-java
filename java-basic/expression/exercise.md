@@ -27,12 +27,14 @@ a *= 5 / 2;
 
 ### Bài 3:
 
-Viết chương trình làm các thao tác sau:
-- Tạo 2 biến thuộc kiểu `int` tên là `number` và `yearOfBirth`.
-- Gán cho biến `number` một số nguyên bất kì, biến `yearOfBirth` là năm sinh của mình.
-- Chia biến `number` cho `22`, lấy phần dư nhân với `10` và gán lại vào `number`.
-- Tăng biến `number` lên `50` đơn vị.
-- Nhân `number` với `20` và gán lại vào `number`.
-- Tăng biến `number` lên `1019` đơn vị.
-- In ra màn hình dòng chữ `Tuổi của mình là: ` kèm theo kết quả biểu thức `(number - yearOfBirth) % 100`.
+Cứ hết một năm học, giáo viên trong các trường trung học cơ sở sẽ phải tính toán điểm trung bình của học sinh theo hệ số điểm tương ứng. Viết chương trình tạo các biến `diemMieng`, `diem15Phut`, `diem1Tiet`, `diemThi` lần lượt lưu các điểm miệng, điểm 15 phút, điểm 1 tiết và điểm thi của một học sinh. Biết điểm miệng và điểm 15 phút có hệ số là 1, điểm 1 tiết có hệ số là 2, điểm thi có hệ số là 3, tính và in ra màn hình điểm trung bình của học sinh đó.
 
+### Bài 4:
+
+Viết chương trình làm các thao tác sau:
+- Tạo 2 biến `a`, `b` là 2 số nguyên và gán giá trị bất kì.
+- Sử dụng toán tử tam ngôi `? :` để in ra màn hình giá trị lớn hơn.
+
+### Bài 5:
+
+Tương tự bài 4 nhưng in ra màn hình số lớn nhất trong 3 số `a`, `b`, `c`.

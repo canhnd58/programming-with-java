@@ -13,6 +13,9 @@ Là các bước cụ thể mà theo đó máy tính có thể giải quyết m�
 
 Nếu là động từ, code là việc gõ ra các dòng lệnh. Nếu là danh từ, code là các dòng lệnh mà mình gõ ra.
 
+#### Comment
+
+
 
 #### Compiler
 *Trình biên dịch ([Các bước lập trình](programming-process/README.md#biên-dịch-là-gì))*

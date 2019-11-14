@@ -18,11 +18,11 @@ public static void main(String[] args) {
 thành
 ```java
 public static void main(String[] args) {
-    System.out.println("Xin chao moi nguoi");
+    System.out.println("Hello World!");
 }
 ```
 
-Tìm và bấm nút **Run Project** hay nút gì đó giống giống. Nếu màn hình hiện ra dòng chữ **Xin chao moi nguoi** tức là đã cài đặt thành công.
+Tìm và bấm nút **Run Project** hay nút gì đó giống giống. Nếu màn hình hiện ra dòng chữ **Hello World!** tức là đã cài đặt thành công.
 
 Ví dụ với NetBeans thì làm như sau:
 1. Bấm chuột vào **File** &#8594; **New Project**

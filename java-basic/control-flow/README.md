@@ -140,7 +140,8 @@ Nếu biểu thức có giá trị là `giá trị 1`, các câu lệnh sau `gi�
 
 Ví dụ:
 ```java
-switch (mua) {
+int season = 4;
+switch (season) {
     case 1:
         System.out.println("Mùa xuân");
         break;
@@ -158,8 +159,35 @@ switch (mua) {
         break;
 }
 
-Nếu giá trị trong biến `mua` là `1` thì ỉn ra `Mùa xuân`, nếu là `2` in ra `Mùa hè`, là `3` in ra `Mùa thu`, là `4` in ra `Mùa đông`, các trường hợp khác in ra `Không có mùa này`.
+Nếu giá trị trong biến `season` là `1` thì ỉn ra `Mùa xuân`, nếu là `2` in ra `Mùa hè`, là `3` in ra `Mùa thu`, là `4` in ra `Mùa đông`, các trường hợp khác in ra `Không có mùa này`. Ví dụ trên sẽ in ra `Mùa đông`.
 ```
+
+#### Nếu không có lệnh break thì sao?
+Nếu một trường hợp không có `break` thì các lệnh ở trường hợp phía sau trường hợp đó cũng sẽ được chạy đến khi gặp lệnh `break` mới thôi. Ví dụ:
+```java
+int month = 7;
+switch (month) {
+    case 1:
+    case 3:
+    case 5:
+    case 7:
+    case 8:
+    case 10:
+    case 12:
+        System.out.println("Tháng " + month + " có 31 ngày.");
+        break;
+    case 2:
+        System.out.println("Tháng " + month + " có 28 hoặc 29 ngày.");
+        break;
+    case 4: 
+    case 6:
+    case 9:
+    case 11:
+        System.out.println("Tháng " + month + " có 30 ngày.");
+        break;
+}
+```
+Câu lệnh `switch` ở trên sẽ in ra màn hình dòng chữ `Tháng 7 có 31 ngày.`.
 
 #### Nếu có nhiều trường hợp thì nên dùng if-else hay switch?
 Bất cứ cái gì `switch` làm được thì `if-else` cũng làm được, còn ngược lại thì không đúng nên có thể chỉ cần dùng lệnh `if-else` thôi. Nếu thích dùng `switch` thì cứ dùng cũng không ai cấm.
@@ -212,6 +240,19 @@ Lệnh ở trên có tác dụng tương tự ví dụ của câu lệnh `while`
 
 Ngoài ra có thể có nhiều lệnh khởi tạo cách nhau bởi dấu phảy, nhiều lệnh thay đổi vòng lặp cách nhau bởi dấu phảy.
 
+#### Các câu lệnh lặp có thể lồng trong nhau không?
+Có, câu lệnh lặp cũng giống một câu lệnh bình thường nên có thể nằm trong khối lệnh của câu lệnh lặp khác. Ví dụ:
+
+```java
+for (int i = 0; i < 10; i ++) {
+    for (int j = 0; j < 3; j ++) {
+        System.out.println(i);
+    }
+}
+```
+
+Câu lệnh lặp bên trên in ra màn hình 3 lần số `0`, sau đó in ra 3 lần số `1`, ..., 3 lần số `9`.
+
 #### Thế khi nào dùng for khi nào dùng while?
 Nhìn vào dòng đầu tiên của câu lệnh `for` ta có thể thấy được vòng lặp sẽ thực hiện bao nhiêu lần. Với câu lệnh `while`, 3 thành phần ảnh hưởng đến số lần lặp nằm ở các vị trí xa nhau nên khó biết hơn. Vì thế nếu số lần lặp là xác định thì thường dùng lệnh `for`, nếu không xác định thì thường dùng `while`.
 
@@ -220,8 +261,53 @@ Khi có nhiều lệnh khởi tạo cho vòng lặp hoặc có nhiều lệnh th
 Hoặc dùng tuỳ theo sở thích.
 
 #### Câu lệnh nhảy là gì?
-Câu lệnh nhảy là câu lệnh để nhảy đến câu lệnh khác, có những câu lệnh sau:
-- `break`: dùng trong vòng lặp, nếu chương trình gặp lệnh này thì thoát khỏi vòng lặp luôn (dù biểu thức điều kiện vẫn đúng).
+Câu lệnh nhảy là câu lệnh để nhảy đến câu lệnh khác, được sử dụng với các [từ khoá](../../terminology.md#keyword) sau:
+- `break`: dùng trong vòng lặp hoặc trong câu lệnh `switch`, nếu chương trình gặp lệnh này thì thoát khỏi vòng lặp luôn (dù biểu thức điều kiện vẫn đúng) hoặc thoát khỏi lệnh `switch`.
 - `continue`: dùng trong vòng lặp, nếu chương trình gặp lệnh này thì thoát khỏi lần lặp hiện tại và sang lần lặp tiếp theo.
 - `return`: dùng trong phương thức, nếu chương trình gặp lệnh này thì kết thúc phương thức hiện tại và quay lại phương thức trước đó.
 
+Ví dụ:
+```java
+for (int i = 99; i >= 0; i --) {
+    if (i % 13 == 0) {
+        System.out.println("Số lớn nhất nhỏ hơn 100 và chia hết cho 13 là: " + i);
+        break;
+    }
+}
+```
+
+Chương trình trên lặp lần lượt với các giá trị của biến `i` từ `100` đến `91`. Đến khi `i` có giá trị bằng `91` (thoả mãn điều kiện chia hết cho `13`), chương trình in ra màn hình dòng chữ như trên và kết thúc câu lệnh lặp luôn (do lệnh `break`). Nếu không có lệnh `break` thì chương trình sẽ kiểm tra `i` từ `100` đến `0` và in ra tất cả các số chia hết cho `13`.
+
+```java
+System.out.println("Các số nhỏ hơn 100 vừa không chia hết cho 2 vừa không chia hết cho 5 là:");
+for (int i = 0; i < 100; i ++) {
+    if (i % 2 == 0)
+        continue;
+    if (i % 5 == 0)
+        continue;
+    System.out.println(i);
+}
+```
+Chương trình trên sẽ không in ra màn hình các số chia hết cho `2` hoặc chia hết cho `5` do khi gặp lệnh `continue` thì lệnh `System.out.println` phía sau sẽ không được thực hiện.
+
+Lệnh `return` sẽ tìm hiểu ở bài sau.
+
+#### Ví dụ cuối không dùng continue cũng được mà?
+Ừ, thường thì một vấn đề đều có nhiều cách làm, dùng như thế nào tuỳ thói quen từng người thôi. Ví dụ bên trên có thể làm cách khác:
+
+```java
+System.out.println("Các số nhỏ hơn 100 vừa không chia hết cho 2 vừa không chia hết cho 5 là:");
+for (int i = 0; i < 100; i ++) {
+    if (i % 2 != 0 !! i % 5 != 0)
+        System.out.println(i);
+}
+```
+
+#### Sao hay đặt tên biến là i thế?
+`i` là viết tắt của `iteration`, người ta hay đặt tên biến là `i` trong vòng lặp để đại diện cho hiện tại đang ở vòng lặp thứ bao nhiêu.
+
+.  
+.  
+.  
+
+[Bài tập](exercise.md)
