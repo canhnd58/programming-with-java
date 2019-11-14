@@ -1,6 +1,6 @@
 # Khai báo phương thức
 
-*Kiến thức cần nhớ:* [JVM](../../terminology.md#JVM), [statement](../../terminology.md#statement), [block](../../terminology.md#block), [variable](../../terminology.md#variable), [expression](../../terminology.md#expression), [control-flow statement](../../terminology.md#control-flow-statement)
+*Kiến thức cần biết:* [JVM](../../terminology.md#jvm), [statement](../../terminology.md#statement), [block](../../terminology.md#block), [variable](../../terminology.md#variable), [expression](../../terminology.md#expression), [control-flow statement](../../terminology.md#control-flow-statement)
 
 #### Giờ biết hết các kiểu câu lệnh trong Java rồi còn gì để học nữa?
 Về cơ bản thì bất cứ chương trình nào cũng có thể viết thành chuỗi các câu lệnh liên tục nhau trong [phương thức](../../terminology.md#method) `main`. Tuy nhiên nếu chương trình dài mà để tất cả mọi lệnh trong phương thức `main` thì sẽ khó quản lý [mã nguồn](../../terminology.md#source-code) nên một chương trình thường được chia thành nhiều phương thức, mỗi phương thức làm một nhiệm vụ riêng biệt.
@@ -108,11 +108,11 @@ Có 2 loại phương thức, một loại đưa ra một giá trị cụ thể 
 
 Phương thức để làm toán hạng thì khi gọi cần đưa ra một giá trị cụ thể ([literal](../../terminology.md#literal)) gọi là đầu ra ([output](../../terminology.md#output)), giống như biểu thức luôn đưa ra thành một giá trị cụ thể thì phương thức loại này cũng như vậy. Cú pháp tạo một phương thức loại này như thế này:
 
-```java
+```
 static <kiểu dữ liệu đầu ra><dấu cách><tên phương thức><mở ngoặc đơn><kiểu dữ liệu đầu vào 1><dấu cách><tên đầu vào 1><dấu phẩy nếu có thêm đầu vào><kiểu dữ liệu và tên đầu vào khác nếu có><đóng ngoặc đơn><khối lệnh>
 ```
 
-Hơn nữa, trong phương thức loại này luôn cần một câu lệnh `return <biểu thức đầu ra><dấu chấm phẩy` để thể hiện giá trị đầu ra cụ thể là giá trị nào.
+Hơn nữa, trong phương thức loại này luôn cần một câu lệnh `return <biểu thức đầu ra><dấu chấm phẩy>` để thể hiện giá trị đầu ra cụ thể là giá trị nào.
 
 Ví dụ:
 

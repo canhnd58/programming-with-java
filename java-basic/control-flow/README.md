@@ -26,20 +26,20 @@ trong đó, biểu thức điều kiện là một biểu thức mà khi thực 
 
 #### Ví dụ về câu lệnh if đi!
 
-Giả sử có một biến `tuoi` lưu một số nguyên
+Giả sử có một biến `age` lưu một số nguyên
 ```java
-if (tuoi > 25) {
+if (age > 25) {
     System.out.println("Chào cô");
 }
 System.out.println("Tạm biệt");
 ```
 
-Nếu `tuoi` đang có giá trị lớn hơn `25` chương trình sẽ in ra 2 dòng chữ, nếu không sẽ chỉ in ra một dòng chữ `Tạm biệt`.
+Nếu `age` đang có giá trị lớn hơn `25` chương trình sẽ in ra 2 dòng chữ, nếu không sẽ chỉ in ra một dòng chữ `Tạm biệt`.
 
 Ngoài ra, vì khối lệnh chỉ có một lệnh nên có thể bỏ đi dấu ngoặc nhọn (các dấu cách, xuống dòng, thụt đầu dòng chỉ để cho người lập trình dễ đọc):
 
 ```java
-if (tuoi > 25)
+if (age > 25)
     System.out.println("Chào cô");
 System.out.println("Tạm biệt");
 ```
@@ -57,22 +57,22 @@ else
 Nếu biểu thức điều kiện là `true`, chương trình thực hiện khối lệnh 1, nếu không thì thực hiện khối lệnh 2. Ví dụ:
 
 ```java
-if (tuoi > 25) {
+if (age > 25) {
     System.out.println("Chào cô");
 } else {
     System.out.println("Chào bạn");
 }
 ```
 
-Nếu biến `tuoi` có giá trị lớn hơn `25`, chương trình in ra dòng chữ `Chào cô`, nếu không thì in ra `Chào bạn`.
+Nếu biến `age` có giá trị lớn hơn `25`, chương trình in ra dòng chữ `Chào cô`, nếu không thì in ra `Chào bạn`.
 
 Câu lệnh trên tương đương với 2 câu lệnh `if`:
 
 ```java
-if (tuoi > 25) {
+if (age > 25) {
     System.out.println("Chào cô");
 } 
-if (!(tuoi > 25)) {
+if (!(age > 25)) {
     System.out.println("Chào bạn");
 }
 ```
@@ -80,7 +80,7 @@ if (!(tuoi > 25)) {
 #### Nếu có nhiều hơn 2 trường hợp thì sao?
 Có thể dùng lệnh `if-else` lồng nhau:
 ```java
-if (tuoi > 25) {
+if (age > 25) {
     if (laNam == true)
         System.out.println("Chào chú");
     else
@@ -92,9 +92,9 @@ if (tuoi > 25) {
 
 hoặc dùng lệnh `if-else` nối tiếp nhau:
 ```java
-if (tuoi > 60)
+if (age > 60)
     System.out.println("Chào bà");
-else if (tuoi > 25) 
+else if (age > 25) 
     System.out.println("Chào cô");
 else
     System.out.println("Chào bạn");
@@ -103,10 +103,10 @@ else
 Nếu dùng đầy đủ dấu ngoặc nhọn, lệnh trên sẽ thành:
 
 ```java
-if (tuoi > 60) {
+if (age > 60) {
     System.out.println("Chào bà");
 } else {
-    if (tuoi > 25) {
+    if (age > 25) {
         System.out.println("Chào cô");
     } else {
         System.out.println("Chào bạn");
@@ -158,9 +158,9 @@ switch (season) {
         System.out.println("Không có mùa này");
         break;
 }
+```
 
 Nếu giá trị trong biến `season` là `1` thì ỉn ra `Mùa xuân`, nếu là `2` in ra `Mùa hè`, là `3` in ra `Mùa thu`, là `4` in ra `Mùa đông`, các trường hợp khác in ra `Không có mùa này`. Ví dụ trên sẽ in ra `Mùa đông`.
-```
 
 #### Nếu không có lệnh break thì sao?
 Nếu một trường hợp không có `break` thì các lệnh ở trường hợp phía sau trường hợp đó cũng sẽ được chạy đến khi gặp lệnh `break` mới thôi. Ví dụ:
@@ -206,7 +206,7 @@ Khi chương trình chạy đến lệnh `while`, nếu biểu thức điều ki
 Ví dụ:
 
 ```java
-int soLan=0;
+int soLan = 0;
 while (solan < 10) {
     System.out.println("Hello World");
     soLan++;
@@ -305,6 +305,9 @@ for (int i = 0; i < 100; i ++) {
 
 #### Sao hay đặt tên biến là i thế?
 `i` là viết tắt của `iteration`, người ta hay đặt tên biến là `i` trong vòng lặp để đại diện cho hiện tại đang ở vòng lặp thứ bao nhiêu.
+
+#### Hết chưa?
+Còn một chú ý nữa về phong cách lập trình (programming convention) là các lệnh trong một khối lệnh nên viết thẳng hàng nhau. Khối lệnh thuộc về một lệnh khác (ví dụ `if`, `for`) thì các lệnh trong đó thụt vào một dấu tab (dấu tab trên bàn phím, NetBeans thường tự động thụt) so với lệnh bên ngoài. Viết như vậy chương trình sẽ đẹp và dễ đọc. Các ví dụ bên trên đều viết theo phong cách như vậy.
 
 .  
 .  
