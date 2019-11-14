@@ -1,8 +1,8 @@
-# Câu lệnh điều khiển luồng
+# Các câu lệnh điều khiển luồng
 *Kiến thức cần biết:* [statement](../../terminology.md#statement), [variable](../../terminology.md#variable), [expression](../../terminology.md#expression)
 
 #### Câu lệnh điều khiển luồng là gì?
-Bình thường các câu lệnh trong một phương thức sẽ được thực hiện lần lượt và đầy đủ từ trên xuống dưới. Các câu lệnh điều khiển luồng (control flow statement) cho phép bỏ qua các lệnh hay lặp lại các lệnh tuỳ thuộc vào trạng thái của chương trình.
+Bình thường các [câu lệnh](../../terminology.md#statement) trong một [phương thức](../../terminology.md#method) sẽ được thực hiện lần lượt và đầy đủ từ trên xuống dưới. Các câu lệnh điều khiển luồng ([control flow statement](../../terminology.md#control-flow-statement)) cho phép bỏ qua các lệnh hay lặp lại các lệnh tuỳ thuộc vào trạng thái của chương trình.
 
 #### Có những câu lệnh điều khiển luồng nào?
 Có những nhóm sau:
@@ -14,19 +14,19 @@ Có những nhóm sau:
 Câu lệnh điều kiện chia một hay nhiều phần của chương trình thành các trường hợp. Với mỗi trường hợp, chương trình sẽ thực hiện một khối lệnh riêng, một lần chạy chương trình sẽ chỉ thực hiện khối lệnh của một trường hợp. Java hỗ trợ các câu lệnh điều kiện sau: `if`, `if-else`, `switch`.
 
 #### Khối lệnh là gì?
-Khối lệnh (block) là một hay nhiều lệnh liên tiếp nhau. Nếu có nhiều lệnh trong khối lệnh, các lệnh phải đặt trong một cặp dấu ngoặc nhọn `{ }` để thể hiện là cùng nằm trong một khối.
+Khối lệnh ([block](../../terminology.md#block)) là một hay nhiều lệnh liên tiếp nhau. Nếu có nhiều lệnh trong khối lệnh, các lệnh phải đặt trong một cặp dấu ngoặc nhọn `{ }` để thể hiện là cùng nằm trong một khối.
 
 #### Câu lệnh if dùng như nào?
-Câu lệnh điều kiện đơn giản nhất là câu lệnh `if` với cú pháp như sau:
+Câu lệnh điều kiện đơn giản nhất là câu lệnh `if` với [cú pháp](../../terminology.md#syntax) như sau:
 ```
 if<mở ngoặc đơn><biểu thức điều kiện><đóng ngoặc đơn><khối lệnh>
 ```
 
-trong đó, biểu thức điều kiện là một biểu thức mà khi thực hiện sẽ đưa ra `true` hoặc `false`. Khi gặp câu lệnh `if`, chương trình sẽ chỉ thực hiện khối lệnh của lệnh `if` nếu biểu thức điều kiện là `true`.
+trong đó, [biểu thức điều kiện](../../terminology.md#conditional expression) là một biểu thức mà khi thực hiện sẽ đưa ra `true` hoặc `false`. Khi gặp câu lệnh `if`, chương trình sẽ chỉ thực hiện khối lệnh của lệnh `if` nếu biểu thức điều kiện là `true`.
 
 #### Ví dụ về câu lệnh if đi!
 
-Giả sử có một biến `age` lưu một số nguyên
+Giả sử có một [biến](../../terminology.md#variable) `age` lưu một số nguyên
 ```java
 if (age > 25) {
     System.out.println("Chào cô");

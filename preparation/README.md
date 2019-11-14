@@ -1,4 +1,5 @@
 # Cài đặt môi trường lập trình Java
+*Kiến thức cần nhớ:* [compiler](../terminology.md#compiler), [JVM](../terminology.md#jvm)
 
 #### Bắt đầu lập trình thôi!
 Chưa, phải cài đặt một số thứ cần thiết đã mới lập trình được.
@@ -35,5 +36,6 @@ Ví dụ với NetBeans thì làm như sau:
 .  
 .  
 
-[Còn nữa, mà dài lắm đừng đọc.](TLDR.md)
+[Còn nữa, mà dài lắm đừng đọc](TLDR.md)
 
+[Quay lại: Lập trình Java](..)

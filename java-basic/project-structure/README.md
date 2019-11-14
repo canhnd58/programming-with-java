@@ -11,7 +11,7 @@ Một chương trình Java là một project, một project (có thể) gồm nh
 project &#8594; package &#8594; class &#8594; method &#8594; statement
 
 #### Là sao? @@
-Một lệnh hay câu lệnh (statement) là đơn vị nhỏ nhất mang một mục đích mình muốn máy tính thực hiện. Các câu lệnh cùng nhau thực hiện một nhiệm vụ tạo thành 1 phương thức (method). Các phương thức thực hiện các nhiệm vụ của một sự vật được gộp chung vào một lớp (class). Các lớp liên quan đến nhau được nhóm vào thành một package (cái package này chẳng ai dịch). Các package gộp lại thành một chương trình. Đây là góc nhìn của người lập trình và của trình biên dịch. Khi biên dịch xong, chương trình sẽ chuyển thành chuỗi các chỉ thị (instruction) để JVM thực hiện lần lượt thôi.
+Một lệnh hay câu lệnh ([statement](../../terminology.md#statement)) là đơn vị nhỏ nhất mang một mục đích mình muốn máy tính thực hiện. Các câu lệnh cùng nhau thực hiện một nhiệm vụ tạo thành 1 phương thức ([method](../terminology.md#statement)). Các phương thức thực hiện các nhiệm vụ của một sự vật được gộp chung vào một lớp ([class](../../terminology.md#class)). Các lớp liên quan đến nhau được nhóm vào thành một [package](../../terminology.md#package) (cái package này chẳng ai dịch). Các package gộp lại thành một chương trình. Đây là góc nhìn của người lập trình và của [trình biên dịch](../../terminology.md#compiler). Khi biên dịch xong, chương trình sẽ chuyển thành chuỗi các chỉ thị (instruction) để [JVM](../../terminology.md#jvm) thực hiện lần lượt thôi.
 
 Ví dụ dùng NetBeans tạo một project tên HelloWorld sẽ ra cấu trúc thư mục sau:
 ```

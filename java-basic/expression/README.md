@@ -5,20 +5,20 @@
 Tìm hiểu biểu thức là gì đã.
 
 #### Thế biểu thức là gì?
-Biểu thức (expression) là sự kết hợp giữa các toán tử (operator) và toán hạng (operand) theo quy tắc mà ngôn ngữ cho phép. Chỉ 1 toán hạng thôi cũng gọi là biểu thức.
-Khi chương trình chạy gặp biểu thức, biểu thức luôn được tính thành một giá trị cụ thể (literal). Như vậy, bất cứ chỗ nào trong chương trình có thể để một giá trị cụ thể thì cũng có thể để một biểu thức.
+Biểu thức ([expression](../../terminology.md#expression)) là sự kết hợp giữa các toán tử ([operator](../../terminology.md#operator)) và toán hạng ([operand](../../terminology.md#operand)) theo quy tắc mà ngôn ngữ cho phép. Chỉ 1 toán hạng thôi cũng gọi là biểu thức.
+Khi chương trình chạy gặp biểu thức, biểu thức luôn được tính thành một giá trị cụ thể ([literal](../../terminology.md#literal)). Như vậy, bất cứ chỗ nào trong chương trình có thể để một giá trị cụ thể thì cũng có thể để một biểu thức.
 
 Giữa các toán tử và toán hạng còn có thể thêm các khoảng trắng để dễ đọc.
 
 #### Toán tử là gì?
-Toán tử (operator) là các phép toán như `+`, `-`, `*`, `/`, dùng để thực hiện một phép tính với các toán hạng sau đó đưa ra một giá trị cụ thể.
+Toán tử ([operator](../../terminology.md#operator)) là các phép toán như `+`, `-`, `*`, `/`, dùng để thực hiện một phép tính với các toán hạng sau đó đưa ra một giá trị cụ thể.
 
 #### Toán hạng là gì?
-Toán hạng (operand) là các vế của một phép toán. Toán hạng có thể là giá trị cụ thể (literal), biến (variable), lời gọi đến phương thức (method invocation) hay biểu thức (expression) khác.
+Toán hạng ([operand](../../terminology.md#operand)) là các vế của một phép toán. Toán hạng có thể là giá trị cụ thể ([literal](../../terminology.md#literal)), biến ([variable](../../terminology.md#variable)), lời gọi đến phương thức ([method invocation](../../terminology.md#method-invocation)) hay biểu thức ([expression](../../terminology.md#expression)) khác.
 Tuỳ thuộc các toán hạng thuộc kiểu dữ liệu nào mà các toán tử có thể có ý nghĩa khác nhau.
 
 #### Có những giá trị cụ thể nào trong Java?
-Java có những giá trị cụ thể (literal) sau:
+Java có những giá trị cụ thể ([literal](../../terminology.md#literal)) sau:
 - Các số nguyên như: `0`, `1`, `100`, `-100`.
 - Các số thực như: `0.1`, `-10.25`, `10.0`.
 - Các kí tự như: `'a'`, `'B'`, `'%'`, `'3'` (trong file mã nguồn, các kí tự luôn đặt trong cặp dấu nháy đơn `'` để phân biệt với số, toán tử, tên biến...).
@@ -28,17 +28,17 @@ Java có những giá trị cụ thể (literal) sau:
 - Giá trị đặc biệt thể hiện việc không có giá trị: `null`.
 
 #### 10 với 10.0 không phải là một à?
-Không, `10` được coi là một số nguyên còn `10.0` được coi là một số thực. Cụ thể hơn, `10` thuộc kiểu dữ liệu `int` còn `10.0` thuộc kiểu dữ liệu `double`.
+Không, `10` được coi là một số nguyên còn `10.0` được coi là một số thực. Cụ thể hơn, `10` thuộc [kiểu dữ liệu](../../terminology.md#data-type) `int` còn `10.0` thuộc kiểu dữ liệu `double`.
 
 #### Giá trị tham chiếu là gì?
-Sẽ nói sau ở bài về lớp (class).
+Sẽ nói sau ở bài về lớp ([class](../../terminology.md#class)).
 
 #### Giá trị null là gì?
 Cũng nói ở bài lớp (class).
 
 #### Có những toán tử nào?
 
-- Toán tử gán: `=`, thay đổi giá trị trong biến ở vế trái thành giá trị của biểu thức vế phải. Ví dụ `a = 5` lưu số `5` vào trong biến `a`.
+- Toán tử gán([assignment](../../terminology.md#assignment)): `=`, thay đổi giá trị trong biến ở vế trái thành giá trị của biểu thức vế phải. Ví dụ `a = 5` lưu số `5` vào trong biến `a`.
 
 - Toán tử toán học:
 
@@ -166,7 +166,7 @@ Ví dụ:
 |`a = 2 + 3 > 7`| `false`, và giá trị biến `a` chuyển thành `false`|
 
 #### Lời gọi đến phương thức là gì?
-Một phương thức là một chuỗi các câu lệnh cùng nhau thực hiện một nhiệm vụ nào đó với một đầu vào cho trước. Một phương thức có thể đưa ra một kết quả hoặc không. Nếu phương thức đưa ra một kết quả, có thể dùng phương thức như một toán hạng trong biểu thức. Như đã biết, một chương trình chỉ chạy các câu lệnh trong phương thức `main` nếu phương thức `main` không gọi đến các phương thức khác. Cú pháp để gọi một phương thức như sau:
+Một [phương thức](../../terminology.md#method) là một chuỗi các [câu lệnh](../../terminology.md#statement) cùng nhau thực hiện một nhiệm vụ nào đó với một đầu vào cho trước. Một phương thức có thể đưa ra một kết quả hoặc không. Nếu phương thức đưa ra một kết quả, có thể dùng phương thức như một toán hạng trong biểu thức. Như đã biết, một chương trình chỉ chạy các câu lệnh trong phương thức `main` nếu phương thức `main` không gọi đến các phương thức khác. Cú pháp để gọi một phương thức như sau:
 
 ```
 <tên phương thức><dấu ngoặc mở><các đối số cách nhau dấu phẩy><dấu ngoặc đóng>

@@ -3,9 +3,9 @@
 *Kiến thức cần biết:* [JVM](../../terminology.md#jvm), [statement](../../terminology.md#statement), [block](../../terminology.md#block), [variable](../../terminology.md#variable), [expression](../../terminology.md#expression), [control-flow statement](../../terminology.md#control-flow-statement)
 
 #### Giờ biết hết các kiểu câu lệnh trong Java rồi còn gì để học nữa?
-Về cơ bản thì bất cứ chương trình nào cũng có thể viết thành chuỗi các câu lệnh liên tục nhau trong [phương thức](../../terminology.md#method) `main`. Tuy nhiên nếu chương trình dài mà để tất cả mọi lệnh trong phương thức `main` thì sẽ khó quản lý [mã nguồn](../../terminology.md#source-code) nên một chương trình thường được chia thành nhiều phương thức, mỗi phương thức làm một nhiệm vụ riêng biệt.
+Về cơ bản thì bất cứ chương trình nào cũng có thể viết thành chuỗi các [câu lệnh](../../terminology.md#statement) liên tục nhau trong [phương thức](../../terminology.md#method) `main`. Tuy nhiên nếu chương trình dài mà để tất cả mọi lệnh trong phương thức `main` thì sẽ khó quản lý [mã nguồn](../../terminology.md#source-code) nên một chương trình thường được chia thành nhiều phương thức, mỗi phương thức làm một nhiệm vụ riêng biệt.
 
-Ngoài ra, một số đoạn code dùng đi dùng lại nhiều lần cũng nên được viết thành một phương thức.
+Ngoài ra, một số đoạn [code](../../terminology.md#code) dùng đi dùng lại nhiều lần cũng nên được viết thành một phương thức.
 
 #### Tạo một phương thức như thế nào?
 

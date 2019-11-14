@@ -2,14 +2,14 @@
 *Kiến thức cần biết:* [statement](../../terminology.md#statement)
 
 #### Câu lệnh khai báo là gì?
-Mỗi máy tính đều sử dụng bộ nhớ (RAM) khi chạy chương trình.
+Mỗi máy tính đều sử dụng bộ nhớ ([RAM](../../terminology.md#ram)) khi chạy chương trình.
 
-Biến (variable) là các vùng nhớ trong bộ nhớ máy tính lưu giữ tạm thời trạng thái của một chương trình. Khi chương trình chạy gặp một lệnh khai báo biến, chương trình sẽ yêu cầu máy tính cấp cho một vùng nhớ, máy tính sẽ đảm bảo không chương trình nào khác được đụng vào vùng nhớ đó. Chương trình kết thúc thì tất cả các biến được cấp sẽ được giải phóng (máy tính tuỳ ý cấp cho chương trình khác).
+Biến ([variable](../../terminology.md#variable)) là các vùng nhớ trong bộ nhớ máy tính lưu giữ tạm thời trạng thái của một chương trình. Khi chương trình chạy gặp một lệnh khai báo ([declaration](../../terminology.md#declaration)) biến, chương trình sẽ yêu cầu máy tính cấp cho một vùng nhớ, máy tính sẽ đảm bảo không chương trình nào khác được đụng vào vùng nhớ đó. Chương trình kết thúc thì tất cả các biến được cấp sẽ được giải phóng (máy tính tuỳ ý cấp cho chương trình khác).
 
 #### Lệnh khai báo biến trông như thế nào?
-Một biến gồm kiểu dữ liệu (data type) và tên biến. Kiểu dữ liệu là loại dữ liệu biến có thể lưu, một biến sau khi đã khai báo chỉ lưu được 1 loại dữ liệu. Biến cần được đặt tên để các lệnh sau đó có thể dùng.
+Một biến gồm kiểu dữ liệu ([data type](../../terminology.md#data-type)) và tên biến (hay còn gọi là định danh - [identifier](../../terminology.md#identifier)). Kiểu dữ liệu là loại dữ liệu biến có thể lưu, một biến sau khi đã khai báo chỉ lưu được 1 loại dữ liệu. Biến cần được đặt tên để các lệnh sau đó có thể dùng.
 
-Cú pháp của lệnh khai báo biến như sau:
+Cú pháp ([syntax](../../terminology.md#syntax)) của lệnh khai báo biến như sau:
 ```
 <kiểu dữ liệu><dấu cách><tên biến><dấu chấm phẩy>
 ```
