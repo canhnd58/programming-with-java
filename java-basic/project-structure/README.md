@@ -91,3 +91,5 @@ Các câu lệnh này làm gì bài sau sẽ rõ.
 .  
 
 [Bài tập](exercise.md)
+
+[Quay lại: Java căn bản](..)

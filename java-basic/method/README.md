@@ -221,3 +221,5 @@ Lệnh `getFactorial(n)` tức `getFactorial(3)` đưa ra kết quả là 6 do t
 .  
 
 [Bài tập](exercise.md)
+
+[Quay lại: Java căn bản](..)
