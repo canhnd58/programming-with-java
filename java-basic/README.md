@@ -8,7 +8,7 @@ Giới thiệu các khái niệm cơ bản của Java như biến, biểu thức
 1. [Biểu thức và câu lệnh biểu thức](expression)
 1. [Các câu lệnh điều khiển luồng](control-flow)
 1. [Khai báo phương thức](method)
-1. Khai báo lớp và khởi tạo đối tượng
+1. [Khai báo lớp và khởi tạo đối tượng](class)
 1. Phạm vi hoạt động của biến và đối tượng
 1. Xâu kí tự
 1. Mảng
