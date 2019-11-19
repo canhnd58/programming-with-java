@@ -22,7 +22,7 @@ Câu lệnh điều kiện đơn giản nhất là câu lệnh `if` với [cú p
 if<mở ngoặc đơn><biểu thức điều kiện><đóng ngoặc đơn><khối lệnh>
 ```
 
-trong đó, [biểu thức điều kiện](../../terminology.md#conditional expression) là một biểu thức mà khi thực hiện sẽ đưa ra `true` hoặc `false`. Khi gặp câu lệnh `if`, chương trình sẽ chỉ thực hiện khối lệnh của lệnh `if` nếu biểu thức điều kiện là `true`.
+trong đó, [biểu thức điều kiện](../../terminology.md#conditional-expression) là một biểu thức mà khi thực hiện sẽ đưa ra `true` hoặc `false`. Khi gặp câu lệnh `if`, chương trình sẽ chỉ thực hiện khối lệnh của lệnh `if` nếu biểu thức điều kiện là `true`.
 
 #### Ví dụ về câu lệnh if đi!
 

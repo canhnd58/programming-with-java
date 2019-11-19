@@ -34,7 +34,7 @@ int number3;
 
 #### Có các kiểu dữ liệu nào?
 
-Có 8 kiểu dữ liệu cơ sở (primitive data types), được khai báo bằng 8 từ khoá ([keyword](#../../terminology.md#keyword) như sau:
+Có 8 kiểu dữ liệu cơ sở (primitive data types), được khai báo bằng 8 từ khoá ([keyword](#../../terminology.md#keyword)) như sau:
 - 4 kiểu dữ liệu lưu số nguyên:
     - `byte`: chiếm 1 byte trong bộ nhớ, lưu được các số từ `-128` đến `127`.
     - `short`: chiếm 2 byte trong bộ nhớ, lưu được các số từ `-32,768` đến `32,767`.

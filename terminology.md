@@ -128,6 +128,11 @@ Là kết của của một [phương thức](#method) hay chương trình.
 
 Là tập hợp của một hay nhiều [lớp](#class).
 
+#### Parameter
+*Tham số ([Khai báo phương thức](java-basic/method/#thế-cái-phần-string-args-là-gì))*
+
+Chính là [đầu vào](#input) của phương thức.
+
 #### RAM
 *Bộ nhớ ([Biến và câu lệnh khai báo biến](java-basic/variable/#câu-lệnh-khai-báo-là-gì))*
 

@@ -57,7 +57,9 @@ Ngoài ra, nếu hai phương thức cùng thuộc một lớp thì khi phương
 Phương thức main là phương thức đặc biệt, mình chỉ cần tạo ra thôi chứ không cần gọi tới. Với ví dụ như trên, khi ấn chạy chương trình thì JVM tự động gọi phương thức `PrettyHello.main();` để thực hiện các lệnh trong phương thức `main`.
 
 #### Thế cái phần String[] args là gì?
-Đó gọi là đầu vào ([input](../../terminology.md#input)) của phương thức. Phương thức có thể không nhận đầu vào, nhận một hay nhiều đầu vào, với các đầu vào khác nhau phương thức làm nhiệm vụ khác nhau. Ví dụ phương thức `Math.pow` nhận 2 đầu vào và phương thức `System.out.println` nhận một đầu vào.
+Đó gọi là khai báo đầu vào ([input](../../terminology.md#input)) cho phương thức. Các phương thức độc lập với nhau, tức là biến khai báo trong phương thức này sẽ không dùng được trong phương thức khác, làm như vậy để khi viết 1 phương thức không cần quan tâm phương thức khác đã khai báo biến tên là gì. Muốn truyền các giá trị từ phương thức này sang phương thức khác thì phương thức được gọi cần khai báo từ trước là sẽ nhận đầu vào là kiểu dữ liệu gì và bao nhiêu đầu vào.
+
+Phương thức có thể không nhận đầu vào, nhận một hay nhiều đầu vào, với các đầu vào khác nhau phương thức làm nhiệm vụ khác nhau. Ví dụ phương thức `Math.pow` nhận 2 đầu vào và phương thức `System.out.println` nhận một đầu vào.
 
 Một phương thức đơn giản và nhận đầu vào có thể tạo ra bằng cú pháp như sau:
 
@@ -91,6 +93,8 @@ public class MultiGreet {
 }
 ```
 
+Phương thức `greet` khai báo là sẽ nhận 2 đầu vào, hay còn gọi là tham số ([parameter](../../terminology.md#parameter)). Tham số thứ nhất có kiểu dữ liệu là `String`, tham số thứ hai có kiểu dữ liệu là `int`. Khi gọi phương thức `greet("A", 24)` thì biến `name` trong phương thức `greet` được gán giá trị là `"A"` và biến `age` được gán giá trị là `24` sau đó thực hiện các lệnh trong phương thức `greet` đến hết thì quay về phương thức `main` thực hiện lệnh `greet("B", 26);`.
+
 Chương trình trên sẽ in ra dòng chữ:
 ```
 Chào cô A
@@ -98,7 +102,7 @@ Chào bạn B
 ```
 
 #### Đầu vào phương thức main là gì vậy?
-Có thể đưa đầu vào của chương trình bằng tham số dòng lệnh mà lười giải thích lắm bỏ qua đi.
+Cả chương trình cũng có thể nhận đầu vào bằng tham số dòng lệnh thông qua phương thức `main` mà lười giải thích tham số dòng lệnh lắm bỏ qua đi.
 
 #### Thế từ khoá void để làm gì?
 
@@ -144,7 +148,7 @@ m! + 10 là: 34
 
 
 #### Phương thức getFactorial là biến n còn phương thức main là biến m mà vẫn chạy được à?
-Các biến tạo ra trong các phương thức không liên quan đến nhau (trong phương thức main tạo biến `a` trong phương thức khác vẫn tạo biến `a` được, 2 biến cùng tên nhưng là 2 biến khác nhau, đại diện cho 2 vùng nhớ khác nhau trong bộ nhớ). Biến ở trong phương thức này sẽ không dùng được ở trong phương thức khác, làm như vậy khi viết một phương thức sẽ không cần quan tâm phương thức khác đã tạo ra biến gì rồi.
+Các biến tạo ra trong các phương thức không liên quan đến nhau (trong phương thức main tạo biến `a` trong phương thức khác vẫn tạo biến `a` được, 2 biến cùng tên nhưng là 2 biến khác nhau, đại diện cho 2 vùng nhớ khác nhau trong bộ nhớ). Biến ở trong phương thức này sẽ không dùng được ở trong phương thức khác, làm như vậy khi viết một phương thức sẽ không cần quan tâm phương thức khác đã tạo ra biến gì rồi. Khi kết thúc một phương thức, các biến khai báo trong phương thức đó cũng sẽ mất.
 
 Khi gọi một phương thức, kết quả của biểu thức trong cặp dấu ngoặc đơn sau tên phương thức sẽ được làm đầu vào cho phương thức được gọi. Ở ví dụ trên, khi gọi `getFactorial(n)` giá trị trong biến `n` của phương thức `main` (kết quả của biểu thức `n` là `3`) được copy sang đầu vào của phương thức `getFactorial`, tức là biến `n` trong dòng `static int getFactorial(int n) {` sẽ lưu giá trị `3` (nhưng 2 biến `n` vẫn là 2 biến khác nhau), sau đó mới thực hiện các lệnh bên trong khối lệnh của phương thức `getFactorial`.
 
