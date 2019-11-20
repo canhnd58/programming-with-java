@@ -148,7 +148,7 @@ m! + 10 là: 34
 
 
 #### Phương thức getFactorial là biến n còn phương thức main là biến m mà vẫn chạy được à?
-Các biến tạo ra trong các phương thức không liên quan đến nhau (trong phương thức main tạo biến `a` trong phương thức khác vẫn tạo biến `a` được, 2 biến cùng tên nhưng là 2 biến khác nhau, đại diện cho 2 vùng nhớ khác nhau trong bộ nhớ). Biến ở trong phương thức này sẽ không dùng được ở trong phương thức khác, làm như vậy khi viết một phương thức sẽ không cần quan tâm phương thức khác đã tạo ra biến gì rồi. Khi kết thúc một phương thức, các biến khai báo trong phương thức đó cũng sẽ mất.
+Các biến tạo ra trong các phương thức không liên quan đến nhau (trong phương thức main tạo biến `a` trong phương thức khác vẫn tạo biến `a` được, 2 biến cùng tên nhưng là 2 biến khác nhau, đại diện cho 2 vùng nhớ khác nhau trong bộ nhớ). Biến ở trong phương thức này sẽ không dùng được ở trong phương thức khác. Khi kết thúc một phương thức, các biến khai báo trong phương thức đó cũng sẽ mất. Nói rộng ra thì các biến khai báo ở trong một khối lệnh chỉ dùng được trong khối lệnh đó.
 
 Khi gọi một phương thức, kết quả của biểu thức trong cặp dấu ngoặc đơn sau tên phương thức sẽ được làm đầu vào cho phương thức được gọi. Ở ví dụ trên, khi gọi `getFactorial(n)` giá trị trong biến `n` của phương thức `main` (kết quả của biểu thức `n` là `3`) được copy sang đầu vào của phương thức `getFactorial`, tức là biến `n` trong dòng `static int getFactorial(int n) {` sẽ lưu giá trị `3` (nhưng 2 biến `n` vẫn là 2 biến khác nhau), sau đó mới thực hiện các lệnh bên trong khối lệnh của phương thức `getFactorial`.
 
