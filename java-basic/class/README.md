@@ -50,17 +50,15 @@ Không nhất thiết cần dùng.
 
 Để giải quyết một vấn đề ta cần xác định các *bước* cụ thể mà nếu làm theo lần lượt thì vấn đề sẽ được giải quyết. Trong lập trình, các bước như thế chính là các câu lệnh ([statement](../../terminology.md#statement)). Lập trình có thể chỉ cần viết các câu lệnh liên tiếp nhau mà không cần tạo ra phương thức hay lớp mới. Thực tế thì một số chương trình nhỏ dùng một lần (thường gọi là các [script](../../terminology.md#script)) ít khi viết thêm lớp mới hay thậm chí cả phương thức mới. Ví dụ để tính chỉ số BMI của một người sẽ có các bước là lấy bình phương chiều cao, sau đó lấy cân nặng chia bình phương chiều cao là được chỉ số BMI.
 
-Với các bài toán lớn hơn có quá nhiều các bước, người ta thường chia thuật toán thành các *công việc*. Sau đó, việc giải quyết các bài toán là giải quyết lần lượt các công việc. Trong lập trình, các công việc chính là các phương thức ([method](../../terminology.md#method)), hay còn gọi là hàm hoặc thủ tục. Cách lập trình như vậy gọi là lập trình thủ tục ([procedural programming](../../terminology.md#procedural-programming)), tức việc thiết kế chương trình xoay quanh việc nghĩ giờ cần phương thức nào, các phương thức làm việc gì. Ví dụ để tìm ra người béo nhất trong 3 người ta sẽ cần các phương thức như: tính chỉ số BMI khi biết cân nặng và chiều cao, tìm số lớn nhất trong ba số.
+Với các bài toán lớn hơn có quá nhiều các bước, người ta thường chia thuật toán thành các *công việc*. Sau đó, việc giải quyết các bài toán là giải quyết lần lượt các công việc. Trong lập trình, các công việc chính là các phương thức ([method](../../terminology.md#method)), hay còn gọi là hàm hoặc thủ tục. Cách lập trình như vậy gọi là lập trình thủ tục ([procedural programming](../../terminology.md#procedural-programming)), tức việc thiết kế chương trình xoay quanh việc nghĩ giờ cần phương thức nào, các phương thức làm việc gì. Ví dụ để kiểm tra xem có bao nhiêu người gầy ta sẽ cần các phương thức như: tính chỉ số BMI khi biết cân nặng và chiều cao, kiểm tra béo hay gầy dựa vào chỉ số BMI.
 
-Với bài toán có quá nhiều công việc, người ta tìm các *sự vật* có trong bài toán, mỗi *sự vật* phụ trách một số công việc của nó. Trong lập trình, các sự vật được gọi là các đối tượng ([object](../../terminology.md#object) (hay còn gọi là các thực thể ([instance](../../terminology.md#instance))). Các đối tượng có thuộc tính (biến) và các phương thức của chúng, tương tác với nhau qua các phương thức để thay đổi thuộc tính của mình rồi giải quyết bài toán ban đầu. Cách lập trình như vậy gọi là lập trình hướng đối tượng ([object-oriented programming](../../terminology.md#object-oriented-programming), tức việc thiết kế chương trình xoay quanh việc thiết kế các đối tượng. Với cùng ví dụ tìm người béo nhất trong 3 người như trên, sẽ cần 3 đối tượng mỗi đối tượng đại diện cho một người, mỗi đối tượng có thuộc tính chiều cao và cân nặng, mỗi đối tượng có phương thức tính chỉ số BMI của mình.
-
-Với một vấn đề ta có thể chọn cách lập trình nào cũng được.
+Với bài toán có quá nhiều công việc, người ta tìm các *sự vật* có trong bài toán, mỗi *sự vật* phụ trách một số công việc của nó. Trong lập trình, các sự vật được gọi là các đối tượng ([object](../../terminology.md#object) (hay còn gọi là các thực thể ([instance](../../terminology.md#instance))). Các đối tượng có thuộc tính (biến) và các phương thức của chúng, tương tác với nhau qua các phương thức để thay đổi thuộc tính của mình rồi giải quyết bài toán ban đầu. Cách lập trình như vậy gọi là lập trình hướng đối tượng ([object-oriented programming](../../terminology.md#object-oriented-programming), tức việc thiết kế chương trình xoay quanh việc thiết kế các đối tượng. Với cùng ví dụ đếm số người gầy như trên, mỗi người sẽ được biểu diễn bằng một đối tượng, mỗi đối tượng có thuộc tính chiều cao và cân nặng, mỗi đối tượng có phương thức tính chỉ số BMI của mình, có phương thức kiểm tra mình béo hay gầy.
 
 #### Thế không cần học lập trình hướng đối tượng được không?
 Được, nhưng có sẵn rất nhiều lớp trong Java viết theo kiểu hướng đối tượng, không biết hướng đối tượng là gì thì sao dùng được.
 
 #### Lớp với đối tượng có quan hệ gì?
-Giống như để gọi phương thức ([method invocation](../../terminology.md#method-invocation)) thì trước đó cần tạo ra một phương thức (khai báo phương thức), để tạo ra một đối tượng thì trước đó cần tạo ra một lớp ([class](../../terminology.md)) (khai báo lớp). Tạo ra một lớp giống như mình mô tả cho máy tính một khái niệm mới, khi máy tính đã biết đến khái niệm đó rồi mình có thể yêu cầu máy tính tạo ra một thực thể của khái niệm đó (hay đối tượng của lớp đó). Ví dụ: con người là một khái niệm (một lớp), bạn "Nguyễn Đức Cảnh" là một thực thể (một đối tượng) con người.
+Giống như để dùng một [biến](../../terminology.md#variable) thì trước đó cần khai báo biến, để gọi [phương thức](../../terminology.md#method) thì trước đó cần khai báo một phương thức, để tạo ra một đối tượng thì trước đó cần khai báo một [lớp](../../terminology.md). Tạo ra (khai báo) một lớp giống như mình mô tả cho máy tính một khái niệm mới, khi máy tính đã biết đến khái niệm đó rồi mình có thể yêu cầu máy tính tạo ra (khởi tạo) một thực thể của khái niệm đó (hay đối tượng của lớp đó). Ví dụ: con người là một khái niệm (một lớp), bạn "Nguyễn Đức Cảnh" là một thực thể (một đối tượng) con người.
 
 #### Tạo ra lớp mới như thế nào?
 Cú pháp tạo một lớp mới như thế này:
@@ -385,7 +383,7 @@ public class Person {
 
     // Còn đây là class method
     static double getMaxBMIForUnderweight() {
-        // Lệnh này thì không truy cập `this.weight` được nhưng truy cập `Person.totalPerson` được
+        // Phương thức này thì không truy cập `this.weight` được nhưng truy cập `Person.totalPerson` được
         return 18.5;
     }
 }
@@ -430,6 +428,8 @@ Cách đặt tên giống đặt tên biến. Tuy nhiên nên để chữ cái �
 .  
 .  
 .  
+
+[Còn nữa, mà dài lắm đừng đọc](TLDR.md)
 
 [Bài tập](exercise.md)
 

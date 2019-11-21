@@ -59,11 +59,11 @@ Lệnh đầu tiên tạo ra mảng 10 phần tử (mặc định các phần t�
 *Chú ý: Nếu truy cập đến một phần tử có chỉ số nằm ngoài mảng sẽ khiến chương trình bị lỗi.*
 
 #### Có thể tạo ra mảng của các kiểu dữ liệu nào?
-Bất cứ kiểu dữ liệu nào (primitive và reference data types) đều được.
+Bất cứ kiểu dữ liệu (cả kiểu dữ liệu tham chiếu) đều có thể sử dụng mảng.
 
 #### Mảng còn gì đặc biệt không?
 
-Một đối tượng mảng có một thuộc tính (field hay member variable) tên là `length`. Thuộc tính `length` lưu số lượng phần tử của mảng. Ví dụ:
+Một đối tượng mảng có một trường ([field](../../terminology.md)) tên là `length`. Trường `length` lưu số lượng phần tử của mảng. Ví dụ:
 
 ```java
 int[] arr = new int[10];
@@ -170,7 +170,7 @@ System.out.println(table[0].length);    // 3
 
 #### Còn gì nữa không?
 
-Có package `java.util.Arrays` chứa một số phương thức static (static method) để làm việc với mảng. Ví dụ với mảng số nguyên có:
+Có lớp `java.util.Arrays` chứa một số phương thức static (static method) để làm việc với mảng. Ví dụ với mảng số nguyên có:
 - `static void sort(int[] a)`: sắp xếp các phần tử của mảng `a` tăng dần.
 
 ```java

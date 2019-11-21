@@ -20,7 +20,7 @@ for (int i = 0; i < a.length; i ++)
 
 Viết một phương thức tên `isSorted` nhận vào một mảng các số nguyên, đưa ra `true` nếu mảng đang sắp xếp tăng dần, các số sau lớn hơn (không được bằng) các số trước, nếu không đưa ra `false`.
 
-Ví dụ:
+Ví dụ trong phương thức `main`:
 ```java
 int[] a = {1, 4, 7};
 System.out.println(isSorted(a)); // true
@@ -45,10 +45,10 @@ Tạo một lớp (class) tên là `Book` đại diện cho một quyển sách 
 - `String name`: tên quyển sách.
 - `String author`: tên tác giả.
 
-có hàm khởi tạo:
+có phương thức khởi tạo:
 - `Book(String name, String author)` tạo một quyển sách mới với tên `name` và tác giả `author`.
 
-có hàm thành viên:
+có phương thức thành viên:
 - `String toString()` đưa ra biểu diễn dạng xâu kí tự của quyển sách. Ví dụ sách tên `Mat Biec` của tác giả `Nguyen Nhat Anh` thì phương thức sẽ đưa ra xâu `Mat biec [Nguyen Nhat Anh]`.
 
 Trong phương thức `main` tạo một mảng các quyển sách như sau:
