@@ -113,8 +113,18 @@ Lớp ngoài cùng (lớp không nằm trong khối lệnh nào, [outer class](.
 Có thể có lớp bên trong lớp ([inner class](../../terminology.md#)), ví dụ:
 
 ```java
+public class A {
+    private static class B {
+    }
+
+    public void someMethod() {
+        B b = new B(); // Hoặc A.B b = new A.B();
+    }
+}
 
 ```
+
+Nếu chỉ muốn lớp `B` được dùng trong lớp `A` thì có thể viết như trên.
 
 .  
 .  
