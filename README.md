@@ -15,5 +15,6 @@ Ai chưa biết lập trình và muốn biết lập trình.
 1. [Các bước lập trình](programming-process)
 1. [Cài đặt môi trường lập trình Java](preparation)
 1. [Java căn bản](java-basic)
-1. Lập trình hướng đối tượng với Java
+1. [Lập trình hướng đối tượng với Java](java-oop)
+1. Java nâng cao
 1. [Các thuật ngữ](terminology.md)
