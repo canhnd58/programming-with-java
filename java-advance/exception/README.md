@@ -139,7 +139,7 @@ public class Account {
 }
 ```
 
-Ở ví dụ trên, phương thức `withdraw` khai báo là sẽ có thể có ngoại lệ `OutOfMoneyException` bằng từ khoá `throws`. Trong khối lệnh của phương thức muốn đưa ra ngoại lệ thì dùng từ khoá `throw`, phương thức sẽ kết thúc và không thực hiện các lệnh bên dưới. Tất cả các phương thức muốn sử dụng phương thức `withdraw` đều cần phải xử lý ngoại lệ bằng câu lệnh `try-catch` hoặc khai báo là sẽ đưa ra ngoại lệ `OutOfMoneyException`. Ví dụ:
+Ở ví dụ trên, phương thức `withdraw` khai báo là sẽ có thể có ngoại lệ `OutOfMoneyException` bằng từ khoá `throws`. Trong khối lệnh của phương thức, muốn đưa ra ngoại lệ thì dùng từ khoá `throw`, phương thức gặp lệnh `throw` sẽ kết thúc và không thực hiện các lệnh bên dưới. Tất cả các phương thức muốn sử dụng phương thức `withdraw` đều cần phải xử lý ngoại lệ bằng câu lệnh `try-catch` hoặc khai báo là sẽ đưa ra ngoại lệ `OutOfMoneyException`. Ví dụ:
 
 ```java
 public class Person {
@@ -162,7 +162,7 @@ public class Person {
 
 thì các phương thức gọi tới `buyBook` không cần xử lý ngoại lệ. Còn:
 
-```
+```java
     public boolean buyBook() throws OutOfMoneyException{
         account.withdraw(20000);
         return true;
