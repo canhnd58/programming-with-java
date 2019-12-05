@@ -138,7 +138,7 @@ Ví dụ có lớp `A` có phương thức `void say()` in ra màn hình chữ "
 Do tất cả các phương thức trong interface đều là trừu tượng, lớp con bắt buộc phải ghi đè nên không bị tình trạng như trên.
 
 #### Interface chắc ít được dùng nhỉ?
-Interface được dùng rất nhiều trong các package có sẵn. Ví dụ có interface `Comparable` trong package `java.lang` chỉ có một phương thức `int compareTo(Object obj)`, phương thức `sort` trong lớp `Arrays` gọi đến phương thức `compareTo` khi sắp xết các phần tử trong mảng cho nên bất cứ lớp nào thừa kế interface `Comparable` thì mảng các đối tượng của lớp đó đều có thể được sắp xếp bằng phướng thức `sort`. Phương thức `compareTo` trả về một số âm nếu đối tượng đang xét đứng trước đối tượng `obj` khi sắp xếp. Lớp `String` cũng thừa kế từ interface `Comparable`.
+Interface được dùng rất nhiều trong các package có sẵn. Ví dụ có interface `Comparable` trong package `java.lang` chỉ có một phương thức `int compareTo(Object obj)`, phương thức `sort` trong lớp `Arrays` gọi đến phương thức `compareTo` khi sắp xếp các phần tử trong mảng cho nên bất cứ lớp nào thừa kế interface `Comparable` thì mảng các đối tượng của lớp đó đều có thể được sắp xếp bằng phướng thức `sort`. Phương thức `compareTo` trả về một số âm nếu đối tượng đang xét đứng trước đối tượng `obj` khi sắp xếp. Lớp `String` cũng thừa kế từ interface `Comparable`.
 
 ```java
 public class Pet implements Comparable {
@@ -182,6 +182,8 @@ public class Program {
 .  
 .  
 .  
+
+*Từ khoá:* [abstract class](../../terminology.md#abstract-class), [abstract-method](../../terminology.md#abstract-method), [interface](../../terminology.md#interface)
 
 [Bài tập](exercise.md)
 

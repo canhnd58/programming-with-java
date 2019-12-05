@@ -160,6 +160,30 @@ hay thêm một biến:
 
 Việc ép từ lớp cha sang lớp con được gọi là [downcasting](../../terminology.md#downcasting). Vì downcasting không phải lúc nào cũng làm được (chỉ khi đối tượng đó thực sự thuộc lớp con) nên trình biên dịch không tự động thêm mà mình phải ghi cụ thể như ở trên.
 
+#### Làm sao để biết đối tượng đang xét thuộc lớp nào nếu biến đều để là Pet hết?
+Ta có thể dùng toán tử `instanceof` để kiểm tra một đối tượng có phải thuộc một lớp hay không. Cú pháp như sau:
+
+```
+<tham chiếu><dấu cách>instanceof<dấu cách><tên lớp>
+```
+
+Biểu thức sẽ trả về `true` nếu đối tượng của tham chiếu thuộc lớp cần kiểm tra hoặc thuộc lớp con của lớp cần kiểm tra. Ví dụ:
+
+```java
+public class Person {
+    public int sell(Pet pet) {
+        if (pet instanceof Dog)
+            return 100000;
+        else if (pet instanceof Cat)
+            return 20000;
+        else
+            return 1000;
+        // pet instanceof Pet luôn là true
+    }
+}
+```
+
+
 #### Khi sử dụng method overriding thì không sử dụng được phương thức đã bị ghi đè à?
 Một đối tượng vẫn có thể truy cập được đến phương thức đã bị ghi đè bằng từ khoá `super`:
 
@@ -204,7 +228,7 @@ public class Pet {
 }
 ```
 
-- `boolean equals(Object obj)`: trả về `true` nếu đối tượng đang xét và `obj` cùng là một object.
+- `boolean equals(Object obj)`: trả về `true` nếu đối tượng đang xét và `obj` có cùng `hashCode`.
 
 #### Thế method overloading là gì?
 
