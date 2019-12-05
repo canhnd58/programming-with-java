@@ -153,13 +153,13 @@ public class Pet implements Comparable {
     }
 
     @Override
-    int compareTo(Object obj) {
+    public int compareTo(Object obj) {
         Pet pet = (Pet) obj;
         return age < obj.getAge() ? -1 : (age == obj.getAge() ? 0 : 1);
     }
 
     @Override
-    String toString() {
+    public String toString() {
         return "Pet[" + age + "]";
     }
 }

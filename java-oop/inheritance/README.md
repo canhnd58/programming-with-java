@@ -137,7 +137,7 @@ public class FluffyCat extends Cat { // Lỗi biên dịch
 ```
 
 #### Không dùng thừa kế được không?
-Mấy nguyên tắc lập trình hướng đối tượng là nên dùng thôi chứ không làm theo chương trình vẫn chạy. Tuy nhiên, bất cứ lớp nào trong Java nếu không viết gì thì trình biên dịch tựthêm `extends Object` tức là mọi lớp trong Java đều thừa kế từ lớp `Object`.
+Mấy nguyên tắc lập trình hướng đối tượng là nên dùng thôi chứ không làm theo chương trình vẫn chạy. Tuy nhiên, bất cứ lớp nào trong Java nếu không viết gì thì trình biên dịch tự thêm `extends Object` tức là mọi lớp trong Java đều thừa kế từ lớp `Object`.
 
 #### Tất cả đều thừa kế lớp Object thì có tác dụng gì?
 Một biến tham chiếu thuộc kiểu dữ liệu cha có thể tham chiếu đến các đối tượng thuộc kiểu dữ liệu con. Ví dụ:
@@ -191,7 +191,7 @@ Các wrapper class còn có nhiều phương thức khác nữa, tự tìm hiể
 .  
 .  
 
-*Từ khoá:* [inheritance](../../terminology.md#inheritance), [super class](../../terminology.md#super-class), [subclass](../../terminology.md#subclass)
+*Từ khoá:* [inheritance](../../terminology.md#inheritance), [super class](../../terminology.md#super-class), [subclass](../../terminology.md#subclass), [wrapper class](../../terminology.md#wrapper-class)
 
 [Bài tập](exercise.md)
 
