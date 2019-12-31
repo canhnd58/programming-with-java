@@ -103,12 +103,14 @@ public class Chicken extends Poultry implements Flyable {
 }
 ```
 
+```java
 public class Plane implements Flyable {
     @Override
     public void fly() {
         System.out.println("umm umm");
     }
 }
+```
 
 ```java
 public class Program {
