@@ -207,3 +207,9 @@ public static void main(String[] args) {
 ```
 
 Câu lệnh `try-catch-finally` như trên đảm bảo phương thức `close` luôn được gọi dù ngoại lệ có xảy ra hay không.
+
+.  
+.  
+.  
+
+[Quay lại: Java nâng cao](..)

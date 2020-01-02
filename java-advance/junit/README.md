@@ -143,5 +143,42 @@ public class CalculatorTest {
 
 Phương thức `setUp` được chạy trước khi chạy mỗi phương thức `testAdd`, `testSubtract` và `testAddAndSubtract`. 3 phương thức kia dùng chung biến `cal` nhưng mỗi lần đều tạo đối tượng mới do phương thức `setUp` được gọi trước.
 
-Lớp `Assert` ngoài phương thức `assertEquals` còn có các phương thức khác như: `assertTrue`, `assertFalse`, `assertNull`, `assertNotNull` ...
+Lớp `Assert` ngoài phương thức `assertEquals` còn có các phương thức khác như: `assertTrue`, `assertFalse`, `assertNull`, `assertNotNull`, `assertArrayEquals` ... tự tìm hiểu.
+
+#### Làm sao để kiểm tra phương thức có ngoại lệ hay không?
+Có thể dùng phương thức `static fail()` (hoặc `static fail(String message)`). Khi một testcase gặp một lời gọi đến phương thức `fail` thì testcase đó sẽ kết thúc và tính là sai. Ví dụ:
+
+```java
+public class MyException extends Exception{
+    @Override
+    public String getMessage() {
+        return "Lỗi rồi";
+    }
+}
+```
+
+```java
+import org.junit.Test;
+import static org.junit.Assert.fail;
+
+public class SomeTest {
+    @Test
+    public void testMethodThrowException() {
+        try {
+            someMethod();
+            fail("Should throw exception");
+        }
+        catch (Exception e) {
+            assertEquals("Lỗi rồi", e.getMessage());
+        }
+    }
+```
+
+Nếu phương thức `someMethod` không gây ra ngoại lệ thì câu lệnh `fail` sẽ được chạy và testcase này tính là sai. Nếu có ngoại lệ nhưng phương phức `getMessage` không trả về đúng xâu kí tự mình muốn thì testcase cũng tính là sai.
+
+.  
+.  
+.  
+
+[Quay lại: Java nâng cao](..)
 

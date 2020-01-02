@@ -51,7 +51,7 @@ Các phương thức đều đọc đến một khoảng trắng (dấu cách, d
 
 #### Nhưng mà nhập xong ấn Enter chương trình mới chạy tiếp mà?
 
-Cứ mỗi khi mình ấn phím Enter thì những gì mình nhập sẽ đưa vào vùng nhớ đệm ([buffer](../../terminology.md#buffer)). Các phương thức của `Scanner` đọc từ vùng nhớ đệm chứ không phải đọc trực tiếp những gì mình gõ. Ví dụ:
+Cứ mỗi khi mình ấn phím Enter thì những gì mình nhập sẽ đưa vào vùng nhớ đệm ([buffer](../../terminology.md#buffer)). Các phương thức của `Scanner` đọc từ vùng nhớ đệm chứ không phải đọc trực tiếp những gì mình gõ. Nếu không đọc được từ vùng nhớ đệm thì chương trình mới tạm dừng để đợi người dùng thêm dữ liệu vào vùng nhớ đệm. Ví dụ: 
 
 ```java
 
@@ -86,7 +86,7 @@ Khi chạy chương trình nhập vào như sau:
 5
 ```
 
-Chương trình chạy đến lệnh `a = scan.nextInt()` sẽ tạm dừng vì ban đầu vùng nhớ đệm chưa có gì. Mình gõ `4<Enter>` thì bộ nhớ đệm trở thành `4\n` (kí tự `\n` đại diện cho dấu xuống dòng), lệnh `scan.nextInt()` thấy số `4` nên gán vào biến `a`, xoá số `4` khỏi vùng nhớ đệm sau đó tiếp tục chạy các lệnh tiếp theo. Lệnh `b = scan.nextInt` tạm dừng vì bộ nhớ đệm đang là `\n` không có số nào, mình gõ `3 9 8<Enter>` thì bộ nhớ đệm thành `\n3 9 8\n`. Lệnh `b = scan.nextInt()` bỏ qua dấu `\n` đầu tiên và thấy số `3` nên lưu `3` vào biến `b`, bộ nhớ đệm thành ` 9 8\n`. Lệnh `c = scan.nextInt()` và `d = scan.nextInt()` sẽ không dừng chương trình vì đọc được số `9` và `8` từ bộ nhớ đệm. Màn hình khi chạy chương trình với đầu vào như trên sẽ như sau:
+Chương trình chạy đến lệnh `a = scan.nextInt()` sẽ tạm dừng vì ban đầu vùng nhớ đệm chưa có gì. Mình gõ `4<Enter>` thì bộ nhớ đệm trở thành `4\n` (kí tự `\n` đại diện cho dấu xuống dòng), lệnh `a = scan.nextInt()` thấy số `4` nên gán vào biến `a`, xoá số `4` khỏi vùng nhớ đệm sau đó tiếp tục chạy các lệnh tiếp theo. Lệnh `b = scan.nextInt()` tạm dừng vì bộ nhớ đệm đang là `\n` không có số nào, mình gõ `3 9 8<Enter>` thì bộ nhớ đệm thành `\n3 9 8\n`. Lệnh `b = scan.nextInt()` bỏ qua dấu `\n` đầu tiên và thấy số `3` nên lưu `3` vào biến `b`, bộ nhớ đệm thành `9 8\n`. Lệnh `c = scan.nextInt()` và `d = scan.nextInt()` sẽ không dừng chương trình vì đọc được số `9` và `8` từ bộ nhớ đệm. Màn hình khi chạy chương trình với đầu vào như trên sẽ như sau:
 
 ```
 Nhập a: 4
@@ -160,3 +160,9 @@ Khi chương trình hiện lên dòng chữ `Nhà bạn có bao nhiêu người:
 
 #### Sao lằng nhằng thế?
 Không biết .-.
+
+.  
+.  
+.  
+
+[Quay lại: Java nâng cao](..)
