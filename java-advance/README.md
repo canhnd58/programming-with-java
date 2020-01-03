@@ -9,7 +9,7 @@ Các kiến thức quan trọng của Java nhưng ít dùng hơn các phần tr�
 1. [Enum](enum)
 1. [Generic](generic)
 1. [Collection](collection)
-1. Luồng dữ liệu
+1. [I/O](io)
 1. Biểu thức lambda
 1. Lập trình hàm
 1. Lập trình song song
