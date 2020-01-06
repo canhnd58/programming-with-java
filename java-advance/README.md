@@ -10,6 +10,6 @@ Các kiến thức quan trọng của Java nhưng ít dùng hơn các phần tr�
 1. [Generic](generic)
 1. [Collection](collection)
 1. [I/O](io)
-1. Biểu thức lambda
-1. Lập trình hàm
-1. Lập trình song song
+1. [Functional interface](functional-interface)
+1. [Stream](stream)
+1. [Thread](thread)
