@@ -84,7 +84,7 @@ Các lớp này có phương thức `static of` để tạo ra đối tượng s
 ```java
 IntStream.of(2, 3, 4, 1)
     .map(x -> x * x)
-    .forEach(System.out.println); // In ra 4, 9, 16, 1
+    .forEach(System.out::println); // In ra 4, 9, 16, 1
 ```
 
 Stream còn có rất nhiều phương thức và được chia làm 2 loại là phương thức trung gian và phương thức cuối. Phương thức trung gian là các phương thức mà khi được gọi sẽ không được thực hiện luôn mà sẽ được ghi nhớ, đến khi phương thức cuối được gọi thì các phương thức trung gian mới được thực thi (để máy tính có thể tối ưu các lệnh). Các phương thức trung gian sẽ trả về một đối tượng stream mới nên có thể nối tiếp với các phương thức khác của stream, có những phương thức trung gian hay dùng như sau:
