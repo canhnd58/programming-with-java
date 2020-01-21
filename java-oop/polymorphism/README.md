@@ -228,7 +228,7 @@ public class Pet {
 }
 ```
 
-- `boolean equals(Object obj)`: trả về `true` nếu đối tượng đang xét và `obj` có cùng `hashCode`.
+- `boolean equals(Object obj)`: trả về `true` nếu đối tượng đang xét và `obj` cùng là một đối tượng.
 
 #### Thế method overloading là gì?
 
